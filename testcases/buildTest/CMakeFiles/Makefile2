@@ -65,16 +65,19 @@ CMAKE_BINARY_DIR = /home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distr
 # The main recursive "all" target.
 all: CMakeFiles/proj1Test.dir/all
 all: lib/Catch2/all
+all: lib/json-develop/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: lib/Catch2/preinstall
+preinstall: lib/json-develop/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/docs.dir/clean
 clean: CMakeFiles/proj1Test.dir/clean
 clean: lib/Catch2/clean
+clean: lib/json-develop/clean
 	$(CMAKE_COMMAND) -P CMakeFiles/cmake_directory_clean.cmake
 .PHONY : clean
 
@@ -109,6 +112,21 @@ lib/Catch2/src/preinstall:
 lib/Catch2/src/clean: lib/Catch2/src/CMakeFiles/Catch2.dir/clean
 lib/Catch2/src/clean: lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/clean
 .PHONY : lib/Catch2/src/clean
+
+#=============================================================================
+# Directory level rules for directory lib/json-develop
+
+# Recursive "all" directory target.
+lib/json-develop/all:
+.PHONY : lib/json-develop/all
+
+# Recursive "preinstall" directory target.
+lib/json-develop/preinstall:
+.PHONY : lib/json-develop/preinstall
+
+# Recursive "clean" directory target.
+lib/json-develop/clean:
+.PHONY : lib/json-develop/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/docs.dir

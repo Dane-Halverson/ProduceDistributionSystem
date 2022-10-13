@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases -I/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/lib/Catch2/src/catch2/.. -I/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/generated-includes
+CXX_INCLUDES = -I/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases -I/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcaseslib/json-develop/include -I/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/lib/Catch2/src/catch2/.. -I/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/generated-includes -I/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/lib/json-develop/include
 
 CXX_FLAGS = 
 
