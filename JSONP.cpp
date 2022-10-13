@@ -1,7 +1,6 @@
 #include "JSONP.h"
 
-JSONP::JSONP(std::string filename)
-{
+void JSONP::parce() {
     //parce attempt
     std::ifstream inputFileStream(filename);
 
@@ -12,6 +11,7 @@ JSONP::JSONP(std::string filename)
     inputFileStream >> j;
 
     std::cout << "JSON element (date) = " << j["date"] << std::endl;
+    std::cout << j["daysSincePicked"] << std::endl;
     nlohmann::json jsonArrayData = j["produce"];
     std::cout << "JSON Array size = " << jsonArrayData.size() << std::endl;
     for (size_t i = 0; i < jsonArrayData.size(); i++)
@@ -20,8 +20,3 @@ JSONP::JSONP(std::string filename)
     }
     
 }
-
-JSONP::~JSONP()
-{
-}
-

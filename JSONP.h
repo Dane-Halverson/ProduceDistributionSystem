@@ -2,13 +2,15 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <memory>
 #include <nlohmann/json.hpp>
-#include "ProduceInterface.h"
+
 
 class JSONP {
 private:
-
+    std::string filename;
 public:
-    JSONP(std::string filename);
-    ~JSONP();
+    JSONP(const std::string fn) : filename(fn) {}
+    ~JSONP() = default;
+    void parce();
 };

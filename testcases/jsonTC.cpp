@@ -4,5 +4,7 @@
 
 TEST_CASE("testing constructor") {
     JSONP test("../testJSON.json");
-    
+    test.parce();
+    int i = 1;
+    REQUIRE(i == 1);
 }
