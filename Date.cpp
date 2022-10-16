@@ -92,31 +92,37 @@ void Date::addDays(int num)
 
     for (int i = 0; i < num; ++i)
     {
-        if ((months == 2) && (days == 29) && !(years % 4 == 0) && ((years % 100 == 0) != !(years % 400)))
+        if ((months == 2) && (days == 28))
+        {
+            if ((years %4 == 0) && (years % 100 == 0) && !(years % 400 == 0)) //leapyear
+            {
+                ++months;
+                ++days;
+            }
+            else    //not leapyear
+            {
+                ++months;
+                days = 1;
+            }
+        }
+        else if (((months == 4) || (months == 6) || (months == 9) || (months == 11)) && (days == 30))
         {
             ++months;
             days = 1;
         }
-        else if ((months == 2) && (days == 28))
+        else if ((months == 12) && (days == 31))
         {
-            ++months;
-            days = 1;
-
-        }
-        else if ( ( (months == 4) || (months == 6) || (months == 9) || (months == 11) ) && (days == 30)) {
-            ++months;
-            days = 1;
-        }
-        else if ((months == 12) && (days == 31)) {
             ++years;
             months = 1;
             days = 1;
         }
-        else if (days == 31) {
+        else if (days == 31)
+        {
             ++months;
             days = 1;
         }
-        else {
+        else
+        {
             ++days;
         }
     }
