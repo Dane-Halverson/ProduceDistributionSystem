@@ -103,11 +103,11 @@ void Date::addDays(int num)
             days = 1;
 
         }
-        else if ((months == 4) || (months == 6) || (months == 9) || (months == 11)) {
+        else if ( ( (months == 4) || (months == 6) || (months == 9) || (months == 11) ) && (days == 30)) {
             ++months;
             days = 1;
         }
-        else if (months == 12 && days == 31) {
+        else if ((months == 12) && (days == 31)) {
             ++years;
             months = 1;
             days = 1;
@@ -124,5 +124,5 @@ void Date::addDays(int num)
 
 std::string Date::getString()
 {
-    return DateParser::makeString(years, months, days);
+    return DateParser::makeString(months, days, years);
 }
