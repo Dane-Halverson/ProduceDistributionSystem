@@ -40,5 +40,7 @@ class Date {
      * @param datestring 
      */
     void setDate(std::string datestring);
+
+    std::string getString();
     
 };

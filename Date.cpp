@@ -67,3 +67,7 @@ int Date::daysSinceZero() {
 
     return leapyears + (years*365) + monthDays + days;
 }
+
+std::string Date::getString() {
+    
+}
