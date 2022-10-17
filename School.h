@@ -6,7 +6,9 @@
  */
 
 #include <string>
-
+#include <list>
+#include <memory>
+#include "ProduceInterface.h"
 
 
 /**
@@ -18,6 +20,8 @@ class School {
     std::string name;
     std::string type;
     double budget;
+    std::list<std::shared_ptr<Produce>> boughtProduce;
+
 
     public:
 
@@ -54,5 +58,9 @@ class School {
      * @param amount 
      */
     void setBudget(double amount);
+
+    void addProduce(std::shared_ptr<Produce> p) {boughtProduce.push_back(p);}
+
+    std::list<std::shared_ptr<Produce>> getAllProduce() {return boughtProduce;}
 };
 
