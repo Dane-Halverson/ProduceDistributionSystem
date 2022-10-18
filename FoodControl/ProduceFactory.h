@@ -1,8 +1,8 @@
 #pragma once
 #include <memory>
-#include <vector>
 #include <string>
-#include <iostream>
+#include "ProduceInterface.h"
+
 
 /**
  * @author Marshall Bluhm
@@ -30,9 +30,8 @@ class ProduceFactory {
          * @brief Sets the produce given a the data of {type, weight, date, daysSincePicked, nameOfFarm,  price}
          * @param std::string type, int n, std::string date, int daysSincePick, std::string nameOfFarm, double price
         */
-        std::shared_ptr<Produce> makeProduce(std::string type, int n, std::string date, int daysSincePick, std::string nameOfFarm, double price);
-
-
-    
+        std::shared_ptr<Produce> makeProduce(std::string type, int n, std::string date, int daysSincePick, std::string nameOfFarm, double price);   
 };
+
+
 
