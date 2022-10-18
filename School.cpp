@@ -5,8 +5,8 @@
  * @file School.cpp
  * @date 10/05/2022
  */
-School::School(std::string schoolname, std::string schooltype, double schoolbudget) 
-: name(schoolname), type(schooltype), budget(schoolbudget)
+School::School(std::string schoolname, std::string schooltype, double schoolbudget)
+    : name(schoolname), type(schooltype), budget(schoolbudget)
 {
 }
 
@@ -29,3 +29,13 @@ void School::setBudget(double amount)
 {
     budget = amount;
 }
+
+void School::addProduce(std::shared_ptr<Produce> p)
+{
+    boughtProduce.push_back(p);
+}
+
+std::vector<std::shared_ptr<Produce>> School::getProduceVec() {
+    return boughtProduce;
+}
+
