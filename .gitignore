@@ -1,7 +1,4 @@
-CMakeLists.txt
-Build/*
-TestBuild/*
-!Build
-!TestBuild
+Build
+TestBuild
 lib/*
 

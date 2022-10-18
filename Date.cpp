@@ -128,7 +128,7 @@ void Date::addDays(int num)
     }
 }
 
-std::string Date::getString()
+std::string Date::getString() const
 {
     return DateParser::makeString(months, days, years);
 }

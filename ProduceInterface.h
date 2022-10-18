@@ -32,7 +32,7 @@ class Produce {
     /**
      * @return an int of the numbers of days past the year 0 that it expires
      */
-    int getExperInt();
+    int getExperInt() const ;
 
     /**
      * @return the price per pound of the produce
@@ -64,7 +64,7 @@ Produce::Produce(int n, std::string date, int daysSincePick, std::string nameOfF
     experation.addDays(life - daysSincePick);
 }
 
-int Produce::getExperInt() {
+int Produce::getExperInt() const {
     return experation.getDaysSinceZero();
 }
 

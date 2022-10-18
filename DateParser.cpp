@@ -86,17 +86,17 @@ void DateParser::ParseMMDDYYYY(std::string date)
     year = std::stoi(date);
 }
 
-int DateParser::getDay()
+int DateParser::getDay() const
 {
     return day;
 }
 
-int DateParser::getMonth()
+int DateParser::getMonth() const 
 {
     return month;
 }
 
-int DateParser::getYear()
+int DateParser::getYear() const 
 {
     return year;
 }

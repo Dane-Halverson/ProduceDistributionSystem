@@ -39,19 +39,19 @@ class DateParser {
      * @brief gets the year in int
      * @return year
      */
-    int getYear();
+    int getYear() const;
 
     /**
      * @brief gets the month in int (1-12)
      * @return month
      */
-    int getMonth();
+    int getMonth() const;
     
     /**
      * @brief gets the day in int
      * @return day
      */
-    int getDay();
+    int getDay() const;
 
     static std::string makeString(int months, int days, int years);
 };
