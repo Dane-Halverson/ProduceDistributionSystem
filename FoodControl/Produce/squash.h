@@ -1,12 +1,12 @@
 #pragma once
 
-#include "ProduceInterface.h"
-#include "Date.h"
+#include "../ProduceInterface.h"
+#include "../Date.h"
 
 /**
 * @author Dane Halverson
 * @file squash.h
-* @date 10/17/2022
+* @date 17
 */
 
 class squash : public Produce

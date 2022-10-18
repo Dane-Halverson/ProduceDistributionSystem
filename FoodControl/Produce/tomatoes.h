@@ -1,7 +1,7 @@
 #pragma once
 
-#include "ProduceInterface.h"
-#include "Date.h"
+#include "../ProduceInterface.h"
+#include "../Date.h"
 
 /**
 * @author Dane Halverson
@@ -17,6 +17,7 @@ private:
 public:
    tomatoes(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price);
 };
+
 
 tomatoes::tomatoes(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price)
 : Produce(n, date, daysSincePick, nameOfFarm, price)
