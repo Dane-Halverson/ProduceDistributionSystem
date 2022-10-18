@@ -1,4 +1,3 @@
-testcases/buildTest
 Build/*
 TestBuild/*
 !Build

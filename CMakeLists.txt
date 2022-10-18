@@ -18,7 +18,7 @@ SET(CMAKE_CXX_STANDARD 17)
 
 include_directories(${CMAKE_SOURCE_DIR})
 
-option(MAKE_CATCH2_TESTS "whether or not to compile catch2 tests" ON)
+option(MAKE_CATCH2_TESTS "whether or not to compile catch2 tests" OFF)
 
 # build your external frameworks first
 #

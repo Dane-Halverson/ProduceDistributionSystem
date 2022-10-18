@@ -1,9 +1,20 @@
 #pragma once
+
+/**
+ * @author Dane Halverson
+ * @author Teddy Jeddeloh
+ * @file JSONP.h
+ * @date 10/18/2022
+*/
+
+
+
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <memory>
 #include <nlohmann/json.hpp>
+
 
 
 class JSONP {
