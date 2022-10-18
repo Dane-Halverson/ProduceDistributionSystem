@@ -20,11 +20,11 @@
 class JSONP {
 private:
     std::string filename;
-    void parse();
     nlohmann::json Produce;
     nlohmann::json Schools;
 public:
     JSONP(const std::string fn) : filename(fn) {}
+    void parse();
     ~JSONP() = default;
     std::string getDate();
     std::string getProducecount();
