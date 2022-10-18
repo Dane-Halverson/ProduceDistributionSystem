@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/lib/Catch2/cmake_install.cmake")
+  include("/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/lib/json-develop/cmake_install.cmake")
 
 endif()
 

@@ -1,12 +1,7 @@
-#include "../../Produce/ProduceFactory.h"
+#include <catch2/catch_test_macros.hpp>
+#include "../../FoodControl/ProduceFactory.h"
 
-
-int main() {
-    std::vector<std::string> data = {"tomatoes", "28", "1.91", "Food Farm"};
-
-
-    ProduceFactory testing(data);
-
-
-
-}
+TEST_CASE("Testing Produce Factory") {
+    ProduceFactory testing;
+    std::shared_ptr<Produce> foo = testing.makeProduce("lettuce", 28, "10/18/2022", 2, "Farm Name", 19.28);
+}; 

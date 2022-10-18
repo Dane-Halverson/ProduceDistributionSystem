@@ -133,7 +133,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
- /usr/include/c++/11/bits/basic_string.tcc \
+ /usr/include/c++/11/bits/basic_string.tcc /usr/include/string.h \
+ /usr/include/strings.h \
  /home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/lib/Catch2/src/catch2/../catch2/internal/catch_compiler_capabilities.hpp \
  /home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/lib/Catch2/src/catch2/../catch2/internal/catch_platform.hpp \
  /home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/generated-includes/catch2/catch_user_config.hpp \

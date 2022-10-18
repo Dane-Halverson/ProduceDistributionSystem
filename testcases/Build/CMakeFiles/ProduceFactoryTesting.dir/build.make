@@ -83,35 +83,83 @@ CMakeFiles/ProduceFactoryTesting.dir/ProduceFactoryTesting.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProduceFactoryTesting.dir/ProduceFactoryTesting.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/ProduceFactoryTesting.cpp -o CMakeFiles/ProduceFactoryTesting.dir/ProduceFactoryTesting.cpp.s
 
-CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o: CMakeFiles/ProduceFactoryTesting.dir/flags.make
-CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o: /home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp
-CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o: CMakeFiles/ProduceFactoryTesting.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o -MF CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o.d -o CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o -c /home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.o: CMakeFiles/ProduceFactoryTesting.dir/flags.make
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.o: /home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.o: CMakeFiles/ProduceFactoryTesting.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.o -MF CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.o.d -o CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.o -c /home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp
 
-CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp > CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.i
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp > CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.i
 
-CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp -o CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.s
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp -o CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.s
+
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.o: CMakeFiles/ProduceFactoryTesting.dir/flags.make
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.o: /home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.o: CMakeFiles/ProduceFactoryTesting.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.o -MF CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.o.d -o CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.o -c /home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp
+
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp > CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.i
+
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp -o CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.s
+
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.o: CMakeFiles/ProduceFactoryTesting.dir/flags.make
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.o: /home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.o: CMakeFiles/ProduceFactoryTesting.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.o -MF CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.o.d -o CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.o -c /home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp
+
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp > CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.i
+
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp -o CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.s
+
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.o: CMakeFiles/ProduceFactoryTesting.dir/flags.make
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.o: /home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.o: CMakeFiles/ProduceFactoryTesting.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.o -MF CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.o.d -o CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.o -c /home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp
+
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp > CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.i
+
+CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp -o CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.s
 
 # Object files for target ProduceFactoryTesting
 ProduceFactoryTesting_OBJECTS = \
 "CMakeFiles/ProduceFactoryTesting.dir/ProduceFactoryTesting.cpp.o" \
-"CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o"
+"CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.o" \
+"CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.o" \
+"CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.o" \
+"CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.o"
 
 # External object files for target ProduceFactoryTesting
 ProduceFactoryTesting_EXTERNAL_OBJECTS =
 
 ProduceFactoryTesting: CMakeFiles/ProduceFactoryTesting.dir/ProduceFactoryTesting.cpp.o
-ProduceFactoryTesting: CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o
+ProduceFactoryTesting: CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceFactory.cpp.o
+ProduceFactoryTesting: CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/FoodControl/ProduceInterface.cpp.o
+ProduceFactoryTesting: CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Date.cpp.o
+ProduceFactoryTesting: CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/DateParser.cpp.o
 ProduceFactoryTesting: CMakeFiles/ProduceFactoryTesting.dir/build.make
 ProduceFactoryTesting: lib/Catch2/src/libCatch2Main.a
 ProduceFactoryTesting: lib/Catch2/src/libCatch2.a
 ProduceFactoryTesting: CMakeFiles/ProduceFactoryTesting.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ProduceFactoryTesting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ProduceFactoryTesting"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ProduceFactoryTesting.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

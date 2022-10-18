@@ -129,93 +129,6 @@ docs/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/docs.dir/build.make CMakeFiles/docs.dir/build
 .PHONY : docs/fast
 
-#=============================================================================
-# Target rules for targets named ProduceFactoryTesting
-
-# Build rule for target.
-ProduceFactoryTesting: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProduceFactoryTesting
-.PHONY : ProduceFactoryTesting
-
-# fast build rule for target.
-ProduceFactoryTesting/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProduceFactoryTesting.dir/build.make CMakeFiles/ProduceFactoryTesting.dir/build
-.PHONY : ProduceFactoryTesting/fast
-
-#=============================================================================
-# Target rules for targets named Catch2
-
-# Build rule for target.
-Catch2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Catch2
-.PHONY : Catch2
-
-# fast build rule for target.
-Catch2/fast:
-	$(MAKE) $(MAKESILENT) -f lib/Catch2/src/CMakeFiles/Catch2.dir/build.make lib/Catch2/src/CMakeFiles/Catch2.dir/build
-.PHONY : Catch2/fast
-
-#=============================================================================
-# Target rules for targets named Catch2WithMain
-
-# Build rule for target.
-Catch2WithMain: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Catch2WithMain
-.PHONY : Catch2WithMain
-
-# fast build rule for target.
-Catch2WithMain/fast:
-	$(MAKE) $(MAKESILENT) -f lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/build.make lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/build
-.PHONY : Catch2WithMain/fast
-
-ProduceFactoryTesting.o: ProduceFactoryTesting.cpp.o
-.PHONY : ProduceFactoryTesting.o
-
-# target to build an object file
-ProduceFactoryTesting.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProduceFactoryTesting.dir/build.make CMakeFiles/ProduceFactoryTesting.dir/ProduceFactoryTesting.cpp.o
-.PHONY : ProduceFactoryTesting.cpp.o
-
-ProduceFactoryTesting.i: ProduceFactoryTesting.cpp.i
-.PHONY : ProduceFactoryTesting.i
-
-# target to preprocess a source file
-ProduceFactoryTesting.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProduceFactoryTesting.dir/build.make CMakeFiles/ProduceFactoryTesting.dir/ProduceFactoryTesting.cpp.i
-.PHONY : ProduceFactoryTesting.cpp.i
-
-ProduceFactoryTesting.s: ProduceFactoryTesting.cpp.s
-.PHONY : ProduceFactoryTesting.s
-
-# target to generate assembly for a file
-ProduceFactoryTesting.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProduceFactoryTesting.dir/build.make CMakeFiles/ProduceFactoryTesting.dir/ProduceFactoryTesting.cpp.s
-.PHONY : ProduceFactoryTesting.cpp.s
-
-home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.o: home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o
-.PHONY : home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.o
-
-# target to build an object file
-home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProduceFactoryTesting.dir/build.make CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o
-.PHONY : home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.o
-
-home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.i: home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.i
-.PHONY : home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.i
-
-# target to preprocess a source file
-home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProduceFactoryTesting.dir/build.make CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.i
-.PHONY : home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.i
-
-home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.s: home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.s
-.PHONY : home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.s
-
-# target to generate assembly for a file
-home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProduceFactoryTesting.dir/build.make CMakeFiles/ProduceFactoryTesting.dir/home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.s
-.PHONY : home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -225,15 +138,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... docs"
-	@echo "... Catch2"
-	@echo "... Catch2WithMain"
-	@echo "... ProduceFactoryTesting"
-	@echo "... ProduceFactoryTesting.o"
-	@echo "... ProduceFactoryTesting.i"
-	@echo "... ProduceFactoryTesting.s"
-	@echo "... home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.o"
-	@echo "... home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.i"
-	@echo "... home/csugrads/bluhm101/cs2511/Food-Distribution-System/Produce/ProduceFactory.s"
 .PHONY : help
 
 

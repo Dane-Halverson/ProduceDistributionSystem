@@ -953,6 +953,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_approx.cpp.o: ../lib/Catch2/sr
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   generated-includes/catch2/catch_user_config.hpp \
@@ -1466,11 +1468,6 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_get_random_seed.cpp.o: ../lib/
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   ../lib/Catch2/src/catch2/internal/catch_context.hpp \
-  ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
-  ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
-  generated-includes/catch2/catch_user_config.hpp \
-  /usr/include/c++/11/cstddef \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   ../lib/Catch2/src/catch2/catch_config.hpp \
   ../lib/Catch2/src/catch2/catch_test_spec.hpp \
   ../lib/Catch2/src/catch2/internal/catch_unique_ptr.hpp \
@@ -1505,6 +1502,7 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_get_random_seed.cpp.o: ../lib/
   /usr/include/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
@@ -1613,6 +1611,7 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_get_random_seed.cpp.o: ../lib/
   ../lib/Catch2/src/catch2/interfaces/catch_interfaces_config.hpp \
   ../lib/Catch2/src/catch2/internal/catch_noncopyable.hpp \
   ../lib/Catch2/src/catch2/internal/catch_stringref.hpp \
+  /usr/include/c++/11/cstddef \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
@@ -1836,6 +1835,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_message.cpp.o: ../lib/Catch2/s
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   generated-includes/catch2/catch_user_config.hpp \
@@ -2011,12 +2012,12 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.o: ../lib/Cat
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
   ../lib/Catch2/src/catch2/internal/catch_context.hpp \
+  ../lib/Catch2/src/catch2/internal/catch_enforce.hpp \
+  ../lib/Catch2/src/catch2/internal/catch_source_line_info.hpp \
+  /usr/include/c++/11/cstddef \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   generated-includes/catch2/catch_user_config.hpp \
-  /usr/include/c++/11/cstddef \
-  ../lib/Catch2/src/catch2/internal/catch_enforce.hpp \
-  ../lib/Catch2/src/catch2/internal/catch_source_line_info.hpp \
   ../lib/Catch2/src/catch2/internal/catch_reusable_string_stream.hpp \
   ../lib/Catch2/src/catch2/internal/catch_noncopyable.hpp \
   /usr/include/c++/11/ostream \
@@ -2379,6 +2380,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_session.cpp.o: ../lib/Catch2/s
   ../lib/Catch2/src/catch2/catch_message.hpp \
   ../lib/Catch2/src/catch2/internal/catch_stream_end_stop.hpp \
   ../lib/Catch2/src/catch2/catch_tostring.hpp \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/interfaces/catch_interfaces_enum_values_registry.hpp \
   ../lib/Catch2/src/catch2/interfaces/catch_interfaces_registry_hub.hpp \
   ../lib/Catch2/src/catch2/internal/catch_test_case_tracker.hpp \
@@ -3245,6 +3248,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_tostring.cpp.o: ../lib/Catch2/
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   generated-includes/catch2/catch_user_config.hpp \
@@ -3731,6 +3736,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators.cpp.o: .
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   generated-includes/catch2/catch_user_config.hpp \
@@ -3797,10 +3804,10 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.c
   /usr/include/stdc-predef.h \
   ../lib/Catch2/src/catch2/generators/catch_generators_random.hpp \
   ../lib/Catch2/src/catch2/internal/catch_context.hpp \
-  ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
-  ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
-  generated-includes/catch2/catch_user_config.hpp \
-  /usr/include/c++/11/cstddef \
+  ../lib/Catch2/src/catch2/generators/catch_generators.hpp \
+  ../lib/Catch2/src/catch2/catch_tostring.hpp \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -3813,11 +3820,6 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.c
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  ../lib/Catch2/src/catch2/generators/catch_generators.hpp \
-  ../lib/Catch2/src/catch2/catch_tostring.hpp \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -3851,6 +3853,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.c
   /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/cstddef \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/char_traits.h \
@@ -3957,6 +3961,11 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.c
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
+  ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
+  generated-includes/catch2/catch_user_config.hpp \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
   ../lib/Catch2/src/catch2/internal/catch_reusable_string_stream.hpp \
   ../lib/Catch2/src/catch2/internal/catch_noncopyable.hpp \
@@ -5084,6 +5093,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter
   /usr/include/c++/11/bits/ostream.tcc \
   ../lib/Catch2/src/catch2/internal/catch_stream_end_stop.hpp \
   ../lib/Catch2/src/catch2/catch_tostring.hpp \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
@@ -5689,6 +5700,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_assertion_handler.cpp
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   generated-includes/catch2/catch_user_config.hpp \
@@ -6682,10 +6695,9 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_console_colour.cpp.o:
 lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_context.cpp.o: ../lib/Catch2/src/catch2/internal/catch_context.cpp \
   /usr/include/stdc-predef.h \
   ../lib/Catch2/src/catch2/internal/catch_context.hpp \
-  ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
-  ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
-  generated-includes/catch2/catch_user_config.hpp \
-  /usr/include/c++/11/cstddef \
+  ../lib/Catch2/src/catch2/internal/catch_noncopyable.hpp \
+  ../lib/Catch2/src/catch2/internal/catch_random_number_generator.hpp \
+  /usr/include/c++/11/cstdint \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -6698,10 +6710,6 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_context.cpp.o: ../lib
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  ../lib/Catch2/src/catch2/internal/catch_noncopyable.hpp \
-  ../lib/Catch2/src/catch2/internal/catch_random_number_generator.hpp \
-  /usr/include/c++/11/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -7244,6 +7252,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_decomposer.cpp.o: ../
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   generated-includes/catch2/catch_user_config.hpp \
@@ -8604,6 +8614,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_lazy_expr.cpp.o: ../l
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   generated-includes/catch2/catch_user_config.hpp \
@@ -9012,9 +9024,6 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_list.cpp.o: ../lib/Ca
   ../lib/Catch2/src/catch2/interfaces/catch_interfaces_testcase.hpp \
   ../lib/Catch2/src/catch2/interfaces/catch_interfaces_reporter_factory.hpp \
   ../lib/Catch2/src/catch2/internal/catch_context.hpp \
-  ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
-  ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
-  generated-includes/catch2/catch_user_config.hpp \
   ../lib/Catch2/src/catch2/catch_config.hpp \
   ../lib/Catch2/src/catch2/catch_test_spec.hpp \
   ../lib/Catch2/src/catch2/internal/catch_wildcard_pattern.hpp \
@@ -10632,6 +10641,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_run_context.cpp.o: ..
   /usr/include/c++/11/bits/ostream.tcc \
   ../lib/Catch2/src/catch2/internal/catch_stream_end_stop.hpp \
   ../lib/Catch2/src/catch2/catch_tostring.hpp \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
   ../lib/Catch2/src/catch2/internal/catch_void_type.hpp \
   ../lib/Catch2/src/catch2/interfaces/catch_interfaces_enum_values_registry.hpp \
@@ -10902,6 +10913,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_section.cpp.o: ../lib
   /usr/include/c++/11/bits/ostream.tcc \
   ../lib/Catch2/src/catch2/internal/catch_stream_end_stop.hpp \
   ../lib/Catch2/src/catch2/catch_tostring.hpp \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
   ../lib/Catch2/src/catch2/internal/catch_void_type.hpp \
   ../lib/Catch2/src/catch2/interfaces/catch_interfaces_enum_values_registry.hpp \
@@ -12383,10 +12396,10 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_registry_im
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
   ../lib/Catch2/src/catch2/internal/catch_context.hpp \
+  ../lib/Catch2/src/catch2/internal/catch_enforce.hpp \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   generated-includes/catch2/catch_user_config.hpp \
-  ../lib/Catch2/src/catch2/internal/catch_enforce.hpp \
   ../lib/Catch2/src/catch2/internal/catch_reusable_string_stream.hpp \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -12446,6 +12459,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_registry_im
   ../lib/Catch2/src/catch2/catch_message.hpp \
   ../lib/Catch2/src/catch2/internal/catch_stream_end_stop.hpp \
   ../lib/Catch2/src/catch2/catch_tostring.hpp \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
   ../lib/Catch2/src/catch2/internal/catch_void_type.hpp \
   ../lib/Catch2/src/catch2/interfaces/catch_interfaces_enum_values_registry.hpp \
@@ -13975,6 +13990,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers.cpp.o: ../li
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
@@ -14192,6 +14209,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_container_pr
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
@@ -14434,6 +14453,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_exception.cp
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
@@ -14650,6 +14671,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_floating_poi
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
@@ -14934,6 +14957,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_predicate.cp
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
@@ -15151,6 +15176,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_quantifiers.
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
@@ -15392,6 +15419,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_string.cpp.o
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
@@ -15503,8 +15532,6 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_string.cpp.o
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/cstring \
-  /usr/include/string.h \
-  /usr/include/strings.h \
   /usr/include/c++/11/bits/regex_constants.h \
   /usr/include/c++/11/bits/regex_error.h \
   /usr/include/c++/11/bits/regex_automaton.h \
@@ -15689,6 +15716,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_templated.cp
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
@@ -15928,6 +15957,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/internal/catch_matchers_imp
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
@@ -17533,6 +17564,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp
   ../lib/Catch2/src/catch2/internal/catch_unique_ptr.hpp \
   ../lib/Catch2/src/catch2/internal/catch_move_and_forward.hpp \
   ../lib/Catch2/src/catch2/catch_tostring.hpp \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp \
@@ -17819,6 +17852,8 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_junit.cpp.o
   /usr/include/c++/11/bits/stl_multiset.h \
   ../lib/Catch2/src/catch2/interfaces/catch_interfaces_config.hpp \
   ../lib/Catch2/src/catch2/catch_tostring.hpp \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../lib/Catch2/src/catch2/internal/catch_compiler_capabilities.hpp \
   ../lib/Catch2/src/catch2/internal/catch_platform.hpp \
   generated-includes/catch2/catch_user_config.hpp \
@@ -20198,6 +20233,12 @@ generated-includes/catch2/catch_user_config.hpp:
 
 ../lib/Catch2/src/catch2/internal/catch_test_registry.cpp:
 
+/usr/include/strings.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/signal.h:
+
 ../lib/Catch2/src/catch2/internal/catch_config_wchar.hpp:
 
 ../lib/Catch2/src/catch2/internal/catch_output_redirect.cpp:
@@ -20523,12 +20564,6 @@ generated-includes/catch2/catch_user_config.hpp:
 ../lib/Catch2/src/catch2/internal/catch_exception_translator_registry.cpp:
 
 ../lib/Catch2/src/catch2/internal/catch_fatal_condition_handler.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/signal.h:
-
-/usr/include/strings.h:
 
 /usr/include/c++/11/tuple:
 

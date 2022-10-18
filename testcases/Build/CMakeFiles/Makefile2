@@ -63,52 +63,33 @@ CMAKE_BINARY_DIR = /home/csugrads/bluhm101/cs2511/Food-Distribution-System/testc
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/ProduceFactoryTesting.dir/all
-all: lib/Catch2/all
+all: lib/json-develop/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: lib/Catch2/preinstall
+preinstall: lib/json-develop/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/docs.dir/clean
-clean: CMakeFiles/ProduceFactoryTesting.dir/clean
-clean: lib/Catch2/clean
+clean: lib/json-develop/clean
 	$(CMAKE_COMMAND) -P CMakeFiles/cmake_directory_clean.cmake
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory lib/Catch2
+# Directory level rules for directory lib/json-develop
 
 # Recursive "all" directory target.
-lib/Catch2/all: lib/Catch2/src/all
-.PHONY : lib/Catch2/all
+lib/json-develop/all:
+.PHONY : lib/json-develop/all
 
 # Recursive "preinstall" directory target.
-lib/Catch2/preinstall: lib/Catch2/src/preinstall
-.PHONY : lib/Catch2/preinstall
+lib/json-develop/preinstall:
+.PHONY : lib/json-develop/preinstall
 
 # Recursive "clean" directory target.
-lib/Catch2/clean: lib/Catch2/src/clean
-.PHONY : lib/Catch2/clean
-
-#=============================================================================
-# Directory level rules for directory lib/Catch2/src
-
-# Recursive "all" directory target.
-lib/Catch2/src/all: lib/Catch2/src/CMakeFiles/Catch2.dir/all
-lib/Catch2/src/all: lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/all
-.PHONY : lib/Catch2/src/all
-
-# Recursive "preinstall" directory target.
-lib/Catch2/src/preinstall:
-.PHONY : lib/Catch2/src/preinstall
-
-# Recursive "clean" directory target.
-lib/Catch2/src/clean: lib/Catch2/src/CMakeFiles/Catch2.dir/clean
-lib/Catch2/src/clean: lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/clean
-.PHONY : lib/Catch2/src/clean
+lib/json-develop/clean:
+.PHONY : lib/json-develop/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/docs.dir
@@ -117,7 +98,7 @@ lib/Catch2/src/clean: lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/clean
 CMakeFiles/docs.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/docs.dir/build.make CMakeFiles/docs.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/docs.dir/build.make CMakeFiles/docs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles --progress-num=100 "Built target docs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles --progress-num=1 "Built target docs"
 .PHONY : CMakeFiles/docs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -135,85 +116,6 @@ docs: CMakeFiles/docs.dir/rule
 CMakeFiles/docs.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/docs.dir/build.make CMakeFiles/docs.dir/clean
 .PHONY : CMakeFiles/docs.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ProduceFactoryTesting.dir
-
-# All Build rule for target.
-CMakeFiles/ProduceFactoryTesting.dir/all: lib/Catch2/src/CMakeFiles/Catch2.dir/all
-CMakeFiles/ProduceFactoryTesting.dir/all: lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProduceFactoryTesting.dir/build.make CMakeFiles/ProduceFactoryTesting.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProduceFactoryTesting.dir/build.make CMakeFiles/ProduceFactoryTesting.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles --progress-num=97,98,99 "Built target ProduceFactoryTesting"
-.PHONY : CMakeFiles/ProduceFactoryTesting.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ProduceFactoryTesting.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles 99
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProduceFactoryTesting.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles 0
-.PHONY : CMakeFiles/ProduceFactoryTesting.dir/rule
-
-# Convenience name for target.
-ProduceFactoryTesting: CMakeFiles/ProduceFactoryTesting.dir/rule
-.PHONY : ProduceFactoryTesting
-
-# clean rule for target.
-CMakeFiles/ProduceFactoryTesting.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProduceFactoryTesting.dir/build.make CMakeFiles/ProduceFactoryTesting.dir/clean
-.PHONY : CMakeFiles/ProduceFactoryTesting.dir/clean
-
-#=============================================================================
-# Target rules for target lib/Catch2/src/CMakeFiles/Catch2.dir
-
-# All Build rule for target.
-lib/Catch2/src/CMakeFiles/Catch2.dir/all:
-	$(MAKE) $(MAKESILENT) -f lib/Catch2/src/CMakeFiles/Catch2.dir/build.make lib/Catch2/src/CMakeFiles/Catch2.dir/depend
-	$(MAKE) $(MAKESILENT) -f lib/Catch2/src/CMakeFiles/Catch2.dir/build.make lib/Catch2/src/CMakeFiles/Catch2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94 "Built target Catch2"
-.PHONY : lib/Catch2/src/CMakeFiles/Catch2.dir/all
-
-# Build rule for subdir invocation for target.
-lib/Catch2/src/CMakeFiles/Catch2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles 94
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/Catch2/src/CMakeFiles/Catch2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles 0
-.PHONY : lib/Catch2/src/CMakeFiles/Catch2.dir/rule
-
-# Convenience name for target.
-Catch2: lib/Catch2/src/CMakeFiles/Catch2.dir/rule
-.PHONY : Catch2
-
-# clean rule for target.
-lib/Catch2/src/CMakeFiles/Catch2.dir/clean:
-	$(MAKE) $(MAKESILENT) -f lib/Catch2/src/CMakeFiles/Catch2.dir/build.make lib/Catch2/src/CMakeFiles/Catch2.dir/clean
-.PHONY : lib/Catch2/src/CMakeFiles/Catch2.dir/clean
-
-#=============================================================================
-# Target rules for target lib/Catch2/src/CMakeFiles/Catch2WithMain.dir
-
-# All Build rule for target.
-lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/all: lib/Catch2/src/CMakeFiles/Catch2.dir/all
-	$(MAKE) $(MAKESILENT) -f lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/build.make lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/depend
-	$(MAKE) $(MAKESILENT) -f lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/build.make lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles --progress-num=95,96 "Built target Catch2WithMain"
-.PHONY : lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/all
-
-# Build rule for subdir invocation for target.
-lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles 96
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/bluhm101/cs2511/Food-Distribution-System/testcases/Build/CMakeFiles 0
-.PHONY : lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/rule
-
-# Convenience name for target.
-Catch2WithMain: lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/rule
-.PHONY : Catch2WithMain
-
-# clean rule for target.
-lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/clean:
-	$(MAKE) $(MAKESILENT) -f lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/build.make lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/clean
-.PHONY : lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
