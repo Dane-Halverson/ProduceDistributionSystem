@@ -1,6 +1,6 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.9)
 
-PROJECT(betterOrg)
+PROJECT(FoodDistribution)
 
 find_package(Doxygen OPTIONAL_COMPONENTS dot)
 if (DOXYGEN_FOUND)
@@ -18,11 +18,14 @@ SET(CMAKE_CXX_STANDARD 17)
 
 include_directories(${CMAKE_SOURCE_DIR})
 
+option(MAKE_CATCH2_TESTS "whether or not to compile catch2 tests" OFF)
+
 # build your external frameworks first
 #
 # Catch2
-add_subdirectory(lib/Catch2)
-
+if (MAKE_CATCH2_TESTS)
+  add_subdirectory(lib/Catch2)
+endif()
 # Json
 #
 # this project also needs the nlohmann json project.  Best way to include
@@ -42,5 +45,56 @@ set(JSON_BuildTests
 add_subdirectory(lib/json-develop)
 
 include_directories(${CMAKE_SOURCE_DIR}/lib/json-develop/include)
-add_subdirectory(testcases)
+#add_subdirectory(testcases)
 
+
+
+#catch2 unit tests
+if (MAKE_CATCH2_TESTS)
+  ADD_EXECUTABLE(testDate
+    UnitTests/testDate.cpp
+    Date.h Date.cpp
+    DateParser.h DateParser.cpp
+  )
+
+  ADD_EXECUTABLE (testjson
+    UnitTests/testjson.cpp
+  )
+
+  ADD_EXECUTABLE (testProduce
+    UnitTests/testProduce.cpp 
+    ProduceInterface.h
+    Produce/Tomato.h
+    Date.h Date.cpp
+    DateParser.h DateParser.cpp
+  )
+
+  ADD_EXECUTABLE (test00
+  UnitTests/test00.cpp 
+  School.h School.cpp
+  )
+
+  ADD_EXECUTABLE(jsonTest
+  jsonTC.cpp
+  ../JSONP.h ../JSONP.cpp
+  )
+
+  #jsonTest
+  target_link_libraries(jsonTest PRIVATE Catch2::Catch2WithMain)
+  target_link_libraries(jsonTest PRIVATE nlohmann_json::nlohmann_json)
+
+  #test00
+  target_link_libraries(test00 PRIVATE Catch2::Catch2WithMain)
+  target_link_libraries(test00 PRIVATE nlohmann_json::nlohmann_json)
+
+  #testDate
+  target_link_libraries(testDate PRIVATE Catch2::Catch2WithMain)
+
+  #testjson
+  target_link_libraries(testjson PRIVATE nlohmann_json::nlohmann_json)
+  target_link_libraries(testjson PRIVATE Catch2::Catch2WithMain)
+
+  #testProduce
+  target_link_libraries(testProduce PRIVATE Catch2::Catch2WithMain)
+
+endif()
