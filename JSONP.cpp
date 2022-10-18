@@ -5,10 +5,11 @@
  * @author Teddy Jeddeloh
  * @file JSONP.cpp
  * @date 10/18/2022
-*/
+ */
 
-void JSONP::parse() {
-    //parce attempt
+void JSONP::parse()
+{
+    // parce attempt
     std::ifstream inputFileStream(produceFilename);
 
     // ///////////////////////////////////////
@@ -25,7 +26,6 @@ void JSONP::parse() {
     {
         std::cout << "produce contains" << jsonArrayData[i]["type"] << std::endl;
     }
-    
 }
 
 JSONP::JSONP(std::string pf, std::string sf) : produceFilename(pf), schoolFilename(sf)
@@ -36,3 +36,18 @@ JSONP::JSONP(std::string pf, std::string sf) : produceFilename(pf), schoolFilena
     produceStream >> Produce;
     schoolStream >> Schools;
 }
+
+std::string JSONP::getProduceType(int i)
+{
+    nlohmann::json jsonArrayData = Produce["produce"];
+    return jsonArrayData[i]["type"];
+}
+
+
+/*
+for (int i = 0; i < json.size(); ++i) {
+    string type = json.getProduceType();
+    etc...
+    ProPtr = ProFac.make(type, weight, )
+}
+*/

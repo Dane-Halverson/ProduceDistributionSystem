@@ -38,9 +38,9 @@ public:
     void parse();
     ~JSONP() = default;
     std::string getDate();
-    std::string getProducecount();
+    int getProduceCount();
     int getProduce(int i);
-    int getProduceInfo(int i, std::string data);
+    std::string getProduceType(int i);
     bool produceHasDate();
 
     int getSchoolCount();
