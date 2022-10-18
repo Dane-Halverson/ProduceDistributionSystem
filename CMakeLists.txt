@@ -47,7 +47,9 @@ add_subdirectory(lib/json-develop)
 include_directories(${CMAKE_SOURCE_DIR}/lib/json-develop/include)
 #add_subdirectory(testcases)
 
-
+if (${PROJECT_SOURCE_DIR} EQUAL ${CMAKE_SOURCE_DIR}/TestBuild)
+  set(MAKE_CATCH2_TESTS ON)
+endif()
 
 #catch2 unit tests
 if (MAKE_CATCH2_TESTS)
@@ -75,7 +77,7 @@ if (MAKE_CATCH2_TESTS)
   )
 
   ADD_EXECUTABLE(jsonTest
-  jsonTC.cpp
+  UnitTests/jsonTC.cpp
   ../JSONP.h ../JSONP.cpp
   )
 
