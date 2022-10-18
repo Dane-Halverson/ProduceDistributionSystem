@@ -29,7 +29,7 @@ class Date {
 
     /// @brief gets an int of how many days it's been since year 0
     /// @return the amount of days since 0
-    int getDaysSinceZero() { return full;}
+    int getDaysSinceZero() const { return full;}
 
     /// @brief adds to the the stored amount of days
     /// @param num the amount of days to add
@@ -41,6 +41,6 @@ class Date {
      */
     void setDate(std::string datestring);
 
-    std::string getString();
+    std::string getString() const;
     
 };

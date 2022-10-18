@@ -6,6 +6,7 @@
  * @date  10/17/2022
  * @brief contains Distibutor.h class definition
  */
+struct CompareProduce;
 
 #include "BinaryHeap.h"
 #include "ProduceInterface.h"
@@ -14,7 +15,7 @@
 #include <vector>
 #include <string>
 using ProPtr = std::shared_ptr<Produce>;
-using HeapPtr = std::shared_ptr<BinaryHeap<ProPtr>>;
+using HeapPtr = std::shared_ptr<BinaryHeap<ProPtr, CompareProduce>>;
 
 /**
  * @brief class for distributing produce to schools
@@ -38,4 +39,12 @@ public:
     void pass();
     void buyNext(School s);
     ProPtr getnext();
+};
+
+struct CompareProduce
+{
+    bool operator()(const Produce &lhs, const Produce &rhs) const
+    {
+        return (lhs.getExperInt() < rhs.getExperInt());
+    }
 };
