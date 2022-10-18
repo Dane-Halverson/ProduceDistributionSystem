@@ -1,6 +1,6 @@
 #include "JSONP.h"
 
-void JSONP::parce() {
+void JSONP::parse() {
     //parce attempt
     std::ifstream inputFileStream(filename);
 
@@ -16,7 +16,7 @@ void JSONP::parce() {
     std::cout << "JSON Array size = " << jsonArrayData.size() << std::endl;
     for (size_t i = 0; i < jsonArrayData.size(); i++)
     {
-        std::cout << "produce contains" << jsonArrayData[0][i] << std::endl;
+        std::cout << "produce contains" << jsonArrayData[i]["type"] << std::endl;
     }
     
 }
