@@ -1,4 +1,5 @@
 #pragma once
+#include <memory>
 #include <vector>
 #include <string>
 #include <iostream>
@@ -17,17 +18,19 @@
 class ProduceFactory {
     public:
         /**
-         * @brief Sets the produce given a vector of strings of given data {type, weight, costPerPound, farm}
-         * @param std::vector<std::string>
+         * @brief default constructor
         */
-        ProduceFactory(std::vector<std::string> data);
+        ProduceFactory() = default;
         /**
          * @brief default deconstructor
         */
         ~ProduceFactory() = default;
 
-    private:
-        std::vector<std::string> valid_produce = {"apples", "carrots", "tomatoes", "squash", "lettuce", "onions"};
+        /**
+         * @brief Sets the produce given a the data of {type, weight, date, daysSincePicked, nameOfFarm,  price}
+         * @param std::string type, int n, std::string date, int daysSincePick, std::string nameOfFarm, double price
+        */
+        std::shared_ptr<Produce> makeProduce(std::string type, int n, std::string date, int daysSincePick, std::string nameOfFarm, double price);
 
 
     

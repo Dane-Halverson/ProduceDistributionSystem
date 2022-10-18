@@ -6,35 +6,26 @@
 #include "Produce/onions.h"
 #include "Produce/squash.h"
 
+std::shared_ptr<Produce> ProduceFactory::makeProduce(std::string type, int n, std::string date, int daysSincePick, std::string nameOfFarm, double price){
 
-ProduceFactory::ProduceFactory(std::vector<std::string> data){
-    int size = data.size();
-    std::string date = "10/17/2022";
-    int weight = stoi(data[1]);
-    double cost = stod(data[2]);
-    for (int j = 0; j <valid_produce.size(); j++){
-        if (data[0] == valid_produce[j]){
-            std::cout << valid_produce[j] << std::endl;
-            if (valid_produce[j] == "tomatoes"){
-                //Produce *ptr = new tomatoes();
-                tomatoes(weight, date, 1, data[3], cost);
-            }
-            else if (valid_produce[j] == "lettuce"){
-                lettuce(weight, date, 1, data[3], cost);
-            }
-            else if (valid_produce[j] == "carrots"){
-                carrots(weight, date, 1, data[3], cost);
-            }
-            else if (valid_produce[j] == "apple"){
-                apple(weight, date, 1, data[3], cost);
-            }
-            else if (valid_produce[j] == "onions"){
-                onions(weight, date, 1, data[3], cost);
-            }
-            else if (valid_produce[j] == "squash"){
-                squash(weight, date, 1, data[3], cost);
-            }
-        }
+    if (type == "tomatoes"){
+        return std::make_shared<Produce>(tomatoes(n, date, daysSincePick, nameOfFarm, price));
     }
-}
+    else if (type == "lettuce"){
+        return std::make_shared<Produce>(lettuce(n, date, daysSincePick, nameOfFarm, price));
+    }
+    else if (type == "carrots"){
+        return std::make_shared<Produce>(carrots(n, date, daysSincePick, nameOfFarm, price));
 
+    }
+    else if (type == "apple"){
+        return std::make_shared<Produce>(apple(n, date, daysSincePick, nameOfFarm, price));
+    }
+    else if (type == "onions"){
+        return std::make_shared<Produce>(onions(n, date, daysSincePick, nameOfFarm, price));
+    }
+    else if (type == "squash"){
+        return std::make_shared<Produce>(squash(n, date, daysSincePick, nameOfFarm, price));
+    }
+
+};
