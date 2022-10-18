@@ -1,18 +1,22 @@
-#pragma once
-#include <iostream>
-#include "ProduceInterface.h"
+#include "JSONP.h"
 
-class JSONP {
-private:
+void JSONP::parce() {
+    //parce attempt
+    std::ifstream inputFileStream(filename);
+
+    // ///////////////////////////////////////
+    // open file and parse by json class
+    // ///////////////////////////////////////
+    nlohmann::json j;
+    inputFileStream >> j;
+
+    std::cout << "JSON element (date) = " << j["date"] << std::endl;
+    std::cout << j["daysSincePicked"] << std::endl;
+    nlohmann::json jsonArrayData = j["produce"];
+    std::cout << "JSON Array size = " << jsonArrayData.size() << std::endl;
+    for (size_t i = 0; i < jsonArrayData.size(); i++)
+    {
+        std::cout << "produce contains" << jsonArrayData[0][i] << std::endl;
+    }
     
-public:
-    JSONP(/* args */);
-    ~JSONP();
-
-};
-
-JSONP::JSONP(/* args */){
-}
-
-JSONP::~JSONP() {
 }
