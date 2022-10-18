@@ -33,12 +33,14 @@ class Date {
 
     /// @brief adds to the the stored amount of days
     /// @param num the amount of days to add
-    void addDays(int num) {full += num;}
+    void addDays(int num);
 
     /**
      * @brief takes in a new string to set the date to
      * @param datestring 
      */
     void setDate(std::string datestring);
+
+    std::string getString();
     
 };

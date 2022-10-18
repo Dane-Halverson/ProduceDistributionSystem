@@ -6,6 +6,9 @@
  */
 
 #include <string>
+#include <vector>
+#include <memory>
+#include "ProduceInterface.h"
 
 
 
@@ -18,6 +21,7 @@ class School {
     std::string name;
     std::string type;
     double budget;
+    std::vector<std::shared_ptr<Produce>> boughtProduce;
 
     public:
 
@@ -54,5 +58,17 @@ class School {
      * @param amount 
      */
     void setBudget(double amount);
+
+    /**
+     * @brief add produce to the vector that stores produce the school has purchased
+     * @param p shared_ptr to to produce object
+     */
+    void addProduce(std::shared_ptr<Produce> p);
+
+    /**
+     * @brief returns a vector of shared pointers to produce objects that the school has bought
+     * @return vector of shared pointers to produce objects that the school has bought
+     */
+    std::vector<std::shared_ptr<Produce>> getProduceVec();
 };
 

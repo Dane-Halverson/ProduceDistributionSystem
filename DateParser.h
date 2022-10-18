@@ -52,5 +52,7 @@ class DateParser {
      * @return day
      */
     int getDay();
+
+    static std::string makeString(int months, int days, int years);
 };
 
