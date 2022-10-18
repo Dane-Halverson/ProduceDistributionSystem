@@ -17,13 +17,24 @@
 
 
 
+/**
+ * @class JSONP
+ * @brief Class for parsing json file of produce and school objects
+ */
 class JSONP {
 private:
-    std::string filename;
+    std::string produceFilename;
+    std::string schoolFilename;
     nlohmann::json Produce;
     nlohmann::json Schools;
 public:
-    JSONP(const std::string fn) : filename(fn) {}
+    /**
+     * @brief default constructor for JSONP
+     * @param pf filename for produce json file
+     * @param sf filename for schools json file
+     */
+    JSONP(std::string pf, std::string sf);
+
     void parse();
     ~JSONP() = default;
     std::string getDate();
