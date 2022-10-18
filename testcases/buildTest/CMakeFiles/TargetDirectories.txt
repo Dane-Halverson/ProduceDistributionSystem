@@ -1,0 +1,12 @@
+/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/CMakeFiles/docs.dir
+/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/CMakeFiles/proj1Test.dir
+/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/CMakeFiles/edit_cache.dir
+/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/CMakeFiles/rebuild_cache.dir
+/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/lib/Catch2/CMakeFiles/edit_cache.dir
+/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/lib/Catch2/CMakeFiles/rebuild_cache.dir
+/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/lib/Catch2/src/CMakeFiles/Catch2.dir
+/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/lib/Catch2/src/CMakeFiles/Catch2WithMain.dir
+/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/lib/Catch2/src/CMakeFiles/edit_cache.dir
+/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/lib/Catch2/src/CMakeFiles/rebuild_cache.dir
+/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/lib/json-develop/CMakeFiles/edit_cache.dir
+/home/csugrads/jedde020/cs2511/projects/project1P3/Food-Distribution-System/testcases/buildTest/lib/json-develop/CMakeFiles/rebuild_cache.dir
