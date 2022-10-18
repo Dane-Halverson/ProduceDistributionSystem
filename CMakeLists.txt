@@ -47,6 +47,8 @@ add_subdirectory(lib/json-develop)
 include_directories(${CMAKE_SOURCE_DIR}/lib/json-develop/include)
 #add_subdirectory(testcases)
 
+
+#if in TestBuild then make unit tests
 if (${PROJECT_SOURCE_DIR} EQUAL ${CMAKE_SOURCE_DIR}/TestBuild)
   set(MAKE_CATCH2_TESTS ON)
 endif()
