@@ -2,8 +2,6 @@
 #include <vector>
 #include <string>
 #include <iostream>
-// #include "ProduceInterface.h"
-// #include "Produce/tomatoes.h"
 
 /**
  * @author Marshall Bluhm
@@ -18,20 +16,17 @@
 */
 class ProduceFactory {
     public:
-
         /**
-         * @brief Sets the produce given a vector of strings
+         * @brief Sets the produce given a vector of strings of given data {type, weight, costPerPound, farm}
          * @param std::vector<std::string>
         */
         ProduceFactory(std::vector<std::string> data);
-        
         /**
          * @brief default deconstructor
         */
         ~ProduceFactory() = default;
 
     private:
-
         std::vector<std::string> valid_produce = {"apples", "carrots", "tomatoes", "squash", "lettuce", "onions"};
 
 
