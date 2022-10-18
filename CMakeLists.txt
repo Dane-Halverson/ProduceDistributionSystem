@@ -73,14 +73,18 @@ if (MAKE_CATCH2_TESTS)
     DateParser.h DateParser.cpp
   )
 
-  ADD_EXECUTABLE (test00
-  UnitTests/test00.cpp 
-  School.h School.cpp
-  )
+  #ADD_EXECUTABLE (test00
+  #UnitTests/test00.cpp 
+  #ProduceInterface.h 
+  #School.h School.cpp
+  #Date.h Date.cpp 
+  #DateParser.h DateParser.cpp 
+  #Produce/Tomato.h
+  #)
 
   ADD_EXECUTABLE(jsonTest
   UnitTests/jsonTC.cpp
-  ../JSONP.h ../JSONP.cpp
+  JSONP.h JSONP.cpp
   )
 
   #jsonTest
@@ -88,8 +92,8 @@ if (MAKE_CATCH2_TESTS)
   target_link_libraries(jsonTest PRIVATE nlohmann_json::nlohmann_json)
 
   #test00
-  target_link_libraries(test00 PRIVATE Catch2::Catch2WithMain)
-  target_link_libraries(test00 PRIVATE nlohmann_json::nlohmann_json)
+  #target_link_libraries(test00 PRIVATE Catch2::Catch2WithMain)
+  #target_link_libraries(test00 PRIVATE nlohmann_json::nlohmann_json)
 
   #testDate
   target_link_libraries(testDate PRIVATE Catch2::Catch2WithMain)
