@@ -3,4 +3,4 @@ Build/*
 TestBuild/*
 !Build
 !TestBuild
-
+lib/*
