@@ -113,6 +113,5 @@ public:
      * @return a double with the total budget of the school
      */
     double getSchoolBudget(int i);
-
     
 };
