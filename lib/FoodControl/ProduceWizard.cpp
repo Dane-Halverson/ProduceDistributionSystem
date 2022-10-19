@@ -18,8 +18,8 @@ int main()
     ofstream ProduceFile(type + ".h");
 
     string fileContent = "#pragma once\n\n";
-    fileContent += "#include \"ProduceInterface.h\"\n";
-    fileContent += "#include \"Date.h\"\n\n";
+    fileContent += "#include \"../ProduceInterface.h\"\n";
+    fileContent += "#include \"../Date.h\"\n\n";
     fileContent += "/**\n* @author Dane Halverson\n* @file " + type + ".h\n* @date " + date + "\n";
     fileContent += "*/\n\n";
     fileContent += "class " + type + " : public Produce\n";

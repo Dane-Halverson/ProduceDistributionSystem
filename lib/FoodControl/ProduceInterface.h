@@ -5,7 +5,7 @@
  * @date 10/03/2022
  */
 
-#include "Date.h"
+#include <Date.h>
 
 
 class Produce {
@@ -28,6 +28,7 @@ class Produce {
     Produce(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price);
 
     virtual ~Produce() = default;
+
 
     /**
      * @return an int of the numbers of days past the year 0 that it expires
@@ -56,30 +57,3 @@ class Produce {
     std::string getFarm() const;
 
 };
-
-Produce::Produce(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price) : weight(n), farm(nameOfFarm)
-{
-    pricePerPound = price;
-    experation.setDate(date);
-    experation.addDays(life - daysSincePick);
-}
-
-int Produce::getExperInt() const {
-    return experation.getDaysSinceZero();
-}
-
-double Produce::getPricePerPound() const {
-    return pricePerPound;
-}
-
-int Produce::getWeight() const {
-    return weight;
-}
-
-void Produce::setWeight(int amount) {
-    weight = amount;
-}
-
-std::string Produce::getFarm() const {
-    return farm;
-}

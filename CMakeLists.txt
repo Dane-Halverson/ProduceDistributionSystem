@@ -43,8 +43,13 @@ set(JSON_BuildTests
 # build.  It's generally discouraged (although not necessarily well documented as such) to use include(...) for pulling
 # in other CMake projects anyways.
 add_subdirectory(lib/json-develop)
+add_subdirectory(lib/FoodControl)
+add_subdirectory(lib/Date)
+
 
 include_directories(${CMAKE_SOURCE_DIR}/lib/json-develop/include)
+
+include_directories(${CMAKE_SOURCE_DIR}/lib/Date)
 #add_subdirectory(testcases)
 
 
@@ -57,8 +62,6 @@ endif()
 if (MAKE_CATCH2_TESTS)
   ADD_EXECUTABLE(testDate
     UnitTests/testDate.cpp
-    Date.h Date.cpp
-    DateParser.h DateParser.cpp
   )
 
   ADD_EXECUTABLE (testjson
@@ -67,10 +70,6 @@ if (MAKE_CATCH2_TESTS)
 
   ADD_EXECUTABLE (testProduce
     UnitTests/testProduce.cpp 
-    ProduceInterface.h
-    Produce/Tomato.h
-    Date.h Date.cpp
-    DateParser.h DateParser.cpp
   )
 
   #ADD_EXECUTABLE (test00
@@ -87,6 +86,10 @@ if (MAKE_CATCH2_TESTS)
   JSONP.h JSONP.cpp
   )
 
+  ADD_EXECUTABLE(ProduceFactoryTesting
+  UnitTests/ProduceFactoryTesting.cpp
+)
+
   #jsonTest
   target_link_libraries(jsonTest PRIVATE Catch2::Catch2WithMain)
   target_link_libraries(jsonTest PRIVATE nlohmann_json::nlohmann_json)
@@ -97,6 +100,7 @@ if (MAKE_CATCH2_TESTS)
 
   #testDate
   target_link_libraries(testDate PRIVATE Catch2::Catch2WithMain)
+  target_link_libraries(testDate PUBLIC Date)
 
   #testjson
   target_link_libraries(testjson PRIVATE nlohmann_json::nlohmann_json)
@@ -104,5 +108,13 @@ if (MAKE_CATCH2_TESTS)
 
   #testProduce
   target_link_libraries(testProduce PRIVATE Catch2::Catch2WithMain)
+  target_link_libraries(testProduce PUBLIC Produce)
+  target_link_libraries(testProduce PUBLIC Date)
+
+
+  #testFoodfactory
+  target_link_libraries(ProduceFactoryTesting PRIVATE Catch2::Catch2WithMain)
+  target_link_libraries(ProduceFactoryTesting PUBLIC Produce)
+  target_link_libraries(ProduceFactoryTesting PUBLIC Date)
 
 endif()
