@@ -42,7 +42,7 @@ public:
     int getProduceCount();
     int getProduceWeight(int i);
     std::string getProduceType(int i);
-    bool produceHasDate();
+    bool produceHasDate(int i);
 
     int getSchoolCount();
     std::string getSchool(int i);

@@ -38,10 +38,14 @@ std::string JSONP::getProduceType(int i)
     return produceArr[i]["type"];
 }
 
-bool JSONP::produceHasDate(){
-    return Produce["date"];
+bool JSONP::produceHasDate(int i){
+    nlohmann::json produceArr = Produce["produce"];
+    return produceArr[i].contains("date");
 }
 
+////////////////////////////////////////
+//              School
+////////////////////////////////////////
 int JSONP::getSchoolCount(){
     nlohmann::json schoolArr = Schools["schools"];
     return schoolArr.size();
