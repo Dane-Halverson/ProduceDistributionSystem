@@ -6,7 +6,7 @@
 TEST_CASE("JSONP basic operations") {
     JSONP test("../testJSONP.json", "../testJSONS.json");
     REQUIRE(test.getDate() == "Sept 18 2021");
-    REQUIRE(test.produceHasDate(0) == false);
+    REQUIRE(test.produceHasExperation(0) == false);
 
 
 }
