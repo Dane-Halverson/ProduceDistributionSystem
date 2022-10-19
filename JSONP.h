@@ -77,7 +77,7 @@ public:
      * @return a string of the experation date
      * @throws if called on an object without a defined experation
      */
-    std::string getProduceExeperation(int i);
+    std::string getProduceExperation(int i);
 
     /**
      * @brief returns the days since picked 

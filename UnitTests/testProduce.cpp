@@ -1,13 +1,13 @@
 #include <catch2/catch_test_macros.hpp>
 #include "ProduceInterface.h"
-#include "Produce/Tomato.h"
+#include <Produce/tomatoes.h>
 
 TEST_CASE("produce basic operations")
 {
     // tomato can be constructed
-    Tomato tom1(20, "Oct 20 2022", 2, "a farm", 2);
-    Tomato tom2(20, "Oct 19 2022", 2, "a differnt farm", 2);
-    Tomato tom3(20, "Oct 06 2022", 2, "farm 3", 2);
+    tomatoes tom1(20, "Oct 20 2022", 2, "a farm", 2);
+    tomatoes tom2(20, "Oct 19 2022", 2, "a differnt farm", 2);
+    tomatoes tom3(20, "Oct 06 2022", 2, "farm 3", 2);
     // tomato has the correct Weight
     REQUIRE(tom1.getWeight() == 20);
     //tomato Weight can change

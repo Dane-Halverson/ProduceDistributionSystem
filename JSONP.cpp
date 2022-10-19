@@ -59,7 +59,8 @@ std::string JSONP::getProduceExperation(int i)
         message += "use produceHasExperation(int) to check if it has and experation defined\n";
         throw message;
     }
-    nlohmann::json produceArr = Produce["experation"]
+    nlohmann::json produceArr = Produce["produce"];
+    return produceArr[i]["experation"];
 }
 
 ////////////////////////////////////////
