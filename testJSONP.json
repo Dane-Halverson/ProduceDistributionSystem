@@ -1,0 +1,26 @@
+{
+    "date" : "Sept 18 2021",
+
+    "daysSincePicked" : 1,
+
+    "produce" : [
+    {
+        "type" : "tomatoes",
+        "weight" : 28,
+        "costPerPound" : 1.91,
+        "farm" : "Food Farm"
+    },
+    {
+        "type" : "apples",
+        "weight" : 12,
+        "costPerPound" : 0.80,
+        "farm" : "Little Small Farm"
+    },
+    {
+        "type" : "carrots",
+        "weight" : 45,
+        "costPerPound" : 0.50,
+        "farm" : "Food Farm"
+    }
+    ]
+}
