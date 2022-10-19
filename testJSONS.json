@@ -1,0 +1,30 @@
+{
+    "schools" :
+    [
+        {
+            "type" : "middle",
+            "name" : "Ordean East Middle School",
+            "budget" : 320.00
+        },
+        {
+            "type" : "middle",
+            "name" : "Lincoln Park Middle School",
+            "budget" : 320.00
+    },
+        {
+            "type" : "hs",
+            "name" : "Denfeld High School",
+            "budget" : 820.00
+        },
+        {
+            "type" : "hs",
+            "name" : "Denfeld High School",
+            "budget" : 820.00
+        },
+        {
+            "type" : "elem",
+            "name" : "Myers Wilkins Elementary School",
+            "budget" : 320.00
+        }
+    ]
+}

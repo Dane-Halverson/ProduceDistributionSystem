@@ -28,6 +28,7 @@ private:
     nlohmann::json Produce;
     nlohmann::json Schools;
 public:
+
     /**
      * @brief default constructor for JSONP
      * @param pf filename for produce json file
@@ -35,11 +36,11 @@ public:
      */
     JSONP(std::string pf, std::string sf);
 
-    void parse();
     ~JSONP() = default;
+    //what is this date for? seperate from produce json?
     std::string getDate();
     int getProduceCount();
-    int getProduce(int i);
+    int getProduceWeight(int i);
     std::string getProduceType(int i);
     bool produceHasDate();
 
@@ -47,8 +48,8 @@ public:
     std::string getSchool(int i);
 
     //may wont seperate functions for getting each datapiece ie. days since pick, date, weight, farm etc.
-    std::string getSchoolInfo(int i, std::string data);
-
+    std::string getSchoolType(int i);
+    double getSchoolBudget(int i);
 
     
 };

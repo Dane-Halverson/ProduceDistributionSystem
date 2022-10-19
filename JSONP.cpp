@@ -7,47 +7,58 @@
  * @date 10/18/2022
  */
 
-void JSONP::parse()
-{
-    // parce attempt
-    std::ifstream inputFileStream(produceFilename);
-
-    // ///////////////////////////////////////
-    // open file and parse by json class
-    // ///////////////////////////////////////
-    nlohmann::json j;
-    inputFileStream >> j;
-
-    std::cout << "JSON element (date) = " << j["date"] << std::endl;
-    std::cout << j["daysSincePicked"] << std::endl;
-    nlohmann::json jsonArrayData = j["produce"];
-    std::cout << "JSON Array size = " << jsonArrayData.size() << std::endl;
-    for (size_t i = 0; i < jsonArrayData.size(); i++)
-    {
-        std::cout << "produce contains" << jsonArrayData[i]["type"] << std::endl;
-    }
-}
-
 JSONP::JSONP(std::string pf, std::string sf) : produceFilename(pf), schoolFilename(sf)
 {
+    //parse of produce file
     std::ifstream produceStream(pf);
+    //parse of farm file
     std::ifstream schoolStream(sf);
-
+    //inserting files into json object
     produceStream >> Produce;
     schoolStream >> Schools;
 }
 
+std::string JSONP::getDate(){
+    return Produce["date"];
+}
+
+int JSONP::getProduceCount(){
+    nlohmann::json produceArr = Produce["produce"];
+    return produceArr.size();
+}
+
+int JSONP::getProduceWeight(int i){
+    nlohmann::json produceArr = Produce["produce"];
+    return produceArr[i]["weight"];
+}
+
 std::string JSONP::getProduceType(int i)
 {
-    nlohmann::json jsonArrayData = Produce["produce"];
-    return jsonArrayData[i]["type"];
+    nlohmann::json produceArr = Produce["produce"];
+    return produceArr[i]["type"];
 }
 
-
-/*
-for (int i = 0; i < json.size(); ++i) {
-    string type = json.getProduceType();
-    etc...
-    ProPtr = ProFac.make(type, weight, )
+bool JSONP::produceHasDate(){
+    return Produce["date"];
 }
-*/
+
+int JSONP::getSchoolCount(){
+    nlohmann::json schoolArr = Schools["schools"];
+    return schoolArr.size();
+}
+
+std::string JSONP::getSchool(int i){
+    nlohmann::json schoolArr = Schools["schools"];
+    return schoolArr[i]["name"];
+}
+
+    //may wont seperate functions for getting each datapiece ie. days since pick, date, weight, farm etc.
+std::string JSONP::getSchoolType(int i){
+    nlohmann::json schoolArr = Schools["schools"];
+    return schoolArr[i]["type"];
+}
+
+double JSONP::getSchoolBudget(int i) {
+    nlohmann::json schoolArr = Schools["schools"];
+    return schoolArr[i]["budget"];
+}

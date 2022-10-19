@@ -3,8 +3,6 @@
 
 
 TEST_CASE("testing constructor") {
-    JSONP test("../testJSON.json");
-    test.parse();
-    int i = 1;
-    REQUIRE(i == 1);
+    JSONP test("../testJSONP.json", "../testJSONS.json");
+    REQUIRE(test.getDate() == "Sept 18 2021");
 }
