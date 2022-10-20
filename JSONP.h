@@ -35,7 +35,6 @@ public:
 
     ~JSONP() = default;
     // what is this date for? seperate from produce json?
-    std::string getDate();
     double getCPP(int i);
     std::string getFarm(int i);
     /**
@@ -97,11 +96,7 @@ public:
      * @return a string of the school name
      */
     std::string getSchool(int i);
-    // may wont seperate functions for getting each datapiece ie. days since pick, date, weight, farm etc.
-    std::string getSchoolType(int i);
     
-    double getSchoolBudget(int i);
-
     /**
      * @brief get the type of school middle, high etc.
      * @param i the number or index of the school to get the type of

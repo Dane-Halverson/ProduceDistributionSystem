@@ -69,7 +69,7 @@ std::string JSONP::getProduceExperation(int i)
     return produceArr[i]["experation"];
 }
 
-std::string getFarm(int i)
+std::string JSONP::getFarm(int i)
 {
     nlohmann::json produceArr = Produce["produce"];
     return produceArr[i]["farm"];
