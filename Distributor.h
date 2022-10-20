@@ -39,11 +39,11 @@ public:
     Distributor(std::string producefile, std::string schoolfile);
     ~Distributor() = default;
 
-    bool grabNext();
+    bool stageNext();
     void pass();
     void buyNext(School s);
 
-    bool nextGrabbed();
+    bool produceStaged();
     int getNextWeight();
     std::string getNextType();
     std::string getNextEperation();

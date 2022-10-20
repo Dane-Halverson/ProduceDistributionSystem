@@ -15,7 +15,7 @@ void Distributor::swapHeaps()
     rejectedProduceHeap = temp;
 }
 
-bool Distributor::grabNext()
+bool Distributor::stageNext()
 {
     if (produceHeap->getSize() == 0)
     {
@@ -67,7 +67,7 @@ void Distributor::addProduce()
     }
 }
 
-bool Distributor::nextGrabbed() {
+bool Distributor::produceStaged() {
     if (next == nullptr) {
         return false;
     }
