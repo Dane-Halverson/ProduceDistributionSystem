@@ -51,22 +51,22 @@ double JSONP::getCPP(int i)
     return produceArr[i]["costPerPound"];
 }
 
-bool JSONP::produceHasExperation(int i)
+bool JSONP::produceHasDateOfPick(int i)
 {
     nlohmann::json produceArr = Produce["produce"];
-    return produceArr[i].contains("experation");
+    return produceArr[i].contains("dateofpick");
 }
 
-std::string JSONP::getProduceExperation(int i) 
+std::string JSONP::getProduceDateOfPick(int i) 
 {
-    if (!produceHasExperation(i)) 
+    if (!produceHasDateOfPick(i)) 
 {
-        std::string message = "getProduceExperation(int) called on an object with an experation defined\n";
-        message += "use produceHasExperation(int) to check if it has and experation defined\n";
+        std::string message = "getdateofpick(int) called on an object without dateofpick defined\n";
+        message += "use produceHasDateOfPick(int) to check if it has a date of pick defined\n";
         throw message;
     }
     nlohmann::json produceArr = Produce["produce"];
-    return produceArr[i]["experation"];
+    return produceArr[i]["dateofpick"];
 }
 
 std::string JSONP::getFarm(int i)

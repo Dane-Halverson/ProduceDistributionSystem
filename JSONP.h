@@ -64,19 +64,19 @@ public:
     std::string getProduceType(int i);
 
     /**
-     * @brief function to check if the produce has an experation defined in the json
+     * @brief function to check if the produce has an date of pick defined in the json
      * @param i the number or index of produce to check from the json file
-     * @return true if it has an "experation" element
+     * @return true if it has an "dateofpick" element
      */
-    bool produceHasExperation(int i);
+    bool produceHasDateOfPick(int i);
 
     /**
-     * @brief function to get the experation element of a json produce object
+     * @brief function to get the dateofpick element of a json produce object
      * @param i the number or index to check
-     * @return a string of the experation date
-     * @throws if called on an object without a defined experation
+     * @return a string of the dateofpick date
+     * @throws if called on an object without a defined dateofpick
      */
-    std::string getProduceExperation(int i);
+    std::string getProduceDateOfPick(int i);
 
     /**
      * @brief returns the days since picked 
