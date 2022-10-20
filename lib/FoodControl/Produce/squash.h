@@ -16,6 +16,7 @@ private:
 
 public:
    squash(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price);
+   std::string getType() {return "squash";}
 };
 
 squash::squash(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price)

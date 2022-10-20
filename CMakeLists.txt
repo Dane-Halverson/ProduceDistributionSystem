@@ -72,6 +72,10 @@ if (MAKE_CATCH2_TESTS)
     UnitTests/testProduce.cpp 
   )
 
+  ADD_EXECUTABLE ( testBinaryHeap
+    UnitTests/testBinaryHeap.cpp
+  )
+
   #ADD_EXECUTABLE (test00
   #UnitTests/test00.cpp 
   #ProduceInterface.h 
@@ -88,11 +92,22 @@ if (MAKE_CATCH2_TESTS)
 
   ADD_EXECUTABLE(ProduceFactoryTesting
   UnitTests/ProduceFactoryTesting.cpp
-)
+  )
+
+  ADD_EXECUTABLE (testDistributor
+    UnitTests/testDist.cpp 
+    JSONP.h JSONP.cpp 
+    Distributor.h Distributor.cpp 
+    School.h School.cpp
+  )
 
   #jsonTest
   target_link_libraries(jsonTest PRIVATE Catch2::Catch2WithMain)
   target_link_libraries(jsonTest PRIVATE nlohmann_json::nlohmann_json)
+
+  #testBinaryHeap
+  target_link_libraries(testBinaryHeap PRIVATE Catch2::Catch2WithMain)
+
 
   #test00
   #target_link_libraries(test00 PRIVATE Catch2::Catch2WithMain)
@@ -116,5 +131,10 @@ if (MAKE_CATCH2_TESTS)
   target_link_libraries(ProduceFactoryTesting PRIVATE Catch2::Catch2WithMain)
   target_link_libraries(ProduceFactoryTesting PUBLIC Produce)
   target_link_libraries(ProduceFactoryTesting PUBLIC Date)
+
+  #testDistributor
+  target_link_libraries(testDistributor PRIVATE Catch2::Catch2WithMain)
+  target_link_libraries(testDistributor PUBLIC Produce)
+  target_link_libraries(testDistributor PUBLIC Date)
 
 endif()

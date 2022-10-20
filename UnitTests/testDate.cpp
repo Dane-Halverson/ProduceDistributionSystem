@@ -34,6 +34,10 @@ TEST_CASE("Basic Date operations") {
     REQUIRE(d6.getDaysSinceZero() > d7.getDaysSinceZero());
 
     //can make strings
-    REQUIRE(d2.getString() == "Oct 8 2022");
+    REQUIRE(d2.getString() == "Oct 4 2022");
+
+    Date d9("Sept 18 2022");
+    d9.addDays(2);
+    REQUIRE(d9.getString() == "Sep 20 2022");
 }
 

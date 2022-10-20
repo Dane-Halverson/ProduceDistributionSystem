@@ -26,3 +26,7 @@ void Produce::setWeight(int amount) {
 std::string Produce::getFarm() const {
     return farm;
 }
+
+std::string Produce::getExperString() {
+    return experation.getString();
+}

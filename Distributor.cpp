@@ -1,5 +1,12 @@
 #include "Distributor.h"
-#include "ProduceFactory.h"
+#include <ProduceFactory.h>
+#include <iostream>
+
+Distributor::Distributor(std::string producefile, std::string schoolfile)
+{
+    parser = std::make_shared<JSONP>(producefile, schoolfile);
+    addProduce();
+}
 
 void Distributor::swapHeaps()
 {
@@ -22,6 +29,57 @@ bool Distributor::grabNext()
     return false;
 }
 
-ProPtr Distributor::getnext() {
-    return next;
+void Distributor::addProduce()
+{
+    ProduceFactory p;
+    for (auto i = 0; i < parser->getProduceCount(); ++i)
+    {
+        std::string type = parser->getProduceType(i);
+        int weight = parser->getProduceWeight(i);
+        std::string date = parser->getDate();
+        int dayspick;
+        if (parser->produceHasDateOfPick(i))
+        {
+            Date d1(parser->getDate());
+            Date d2(parser->getProduceDateOfPick(i));
+            dayspick = d1.getDaysSinceZero() - d2.getDaysSinceZero();
+        }
+        else
+        {
+            dayspick = parser->getDaysSincePicked();
+        }
+        std::string name = parser->getFarm(i);
+        double price = parser->getCPP(i);
+
+        ProPtr temp = p.makeProduce(type, weight, date, dayspick, name, price);
+        std::cout << "factory worked\n";
+        std::cout << temp->getExperString() << "\n";
+        produceHeap->insert(temp);
+    }
+}
+
+bool Distributor::nextGrabbed() {
+    if (next == nullptr) {
+        return false;
+    }
+    return true;
+}
+
+int Distributor::getNextWeight() {
+    return next->getWeight();
+}
+
+std::string Distributor::getNextType() {
+    return next->getType();
+}
+
+std::string Distributor::getNextEperation() {
+    return next->getExperString();
+}
+
+double Distributor::getNextPrice() {
+    return next->getPricePerPound();
+}
+std::string Distributor::getNextFarm() {
+    return next->getFarm();
 }

@@ -6,6 +6,7 @@
  */
 
 #include <Date.h>
+#include <memory>
 
 
 class Produce {
@@ -55,5 +56,9 @@ class Produce {
      * @return the name of the farm 
      */
     std::string getFarm() const;
+
+    std::string getExperString();
+
+    virtual std::string getType() {return "produce";}
 
 };
