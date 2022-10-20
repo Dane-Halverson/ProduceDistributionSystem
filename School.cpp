@@ -6,7 +6,7 @@
  * @date 10/05/2022
  */
 School::School(std::string schoolname, std::string schooltype, double schoolbudget)
-    : name(schoolname), type(schooltype), budget(schoolbudget)
+    : name(schoolname), type(schooltype), budget(schoolbudget), boughtProduce(20)
 {
 }
 

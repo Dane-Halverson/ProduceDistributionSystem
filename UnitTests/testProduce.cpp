@@ -1,6 +1,8 @@
 #include <catch2/catch_test_macros.hpp>
 #include "ProduceInterface.h"
 #include <Produce/tomatoes.h>
+#include <memory>
+using ProPtr = std::shared_ptr<Produce>;
 
 TEST_CASE("produce basic operations")
 {
@@ -16,6 +18,10 @@ TEST_CASE("produce basic operations")
     //Experation works correctly
     REQUIRE(tom3.getExperInt() < tom2.getExperInt());
     REQUIRE(tom1.getExperInt() > tom2.getExperInt());
+    
     tomatoes tom4(10, "Sept 18 2021", 1, "farm", 3.4);
     REQUIRE(tom4.getExperString() == "Sep 20 2021");
+
+    ProPtr tomptr = std::make_shared<tomatoes>(10, "Sept 18 2021", 1, "farm", 3.4);
+    REQUIRE(tomptr->getExperString() == "Sep 20 2021");
 }
