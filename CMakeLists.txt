@@ -88,6 +88,7 @@ if (MAKE_CATCH2_TESTS)
   ADD_EXECUTABLE(jsonTest
   UnitTests/jsonTC.cpp
   JSONP.h JSONP.cpp
+  JSONPS.h JSONPS.cpp
   )
 
   ADD_EXECUTABLE(ProduceFactoryTesting
