@@ -12,4 +12,6 @@ TEST_CASE("JSONP basic operations") {
     REQUIRE(test.getProduceWeight(2) == 45);
     REQUIRE(test.getProduceType(0) == "tomatoes");
     REQUIRE(test.getCPP(2) == 0.5);
+    REQUIRE(test.produceHasDateOfPick(1));
+    REQUIRE(test.getProduceDateOfPick(1) == "Jan 5 2022");
 }

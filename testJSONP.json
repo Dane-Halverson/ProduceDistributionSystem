@@ -14,7 +14,8 @@
         "type" : "apples",
         "weight" : 12,
         "costPerPound" : 0.80,
-        "farm" : "Little Small Farm"
+        "farm" : "Little Small Farm",
+        "dateofpick" : "Jan 5 2022"
     },
     {
         "type" : "carrots",
