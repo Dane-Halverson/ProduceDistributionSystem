@@ -34,8 +34,14 @@ public:
     JSONP(std::string pf, std::string sf);
 
     ~JSONP() = default;
-    // what is this date for? seperate from produce json?
+
+    /**
+     * @brief gets cost per pound
+     * @param i the index to get
+     * @return double costperpound
+     */
     double getCPP(int i);
+
     std::string getFarm(int i);
     /**
      * @brief function to get the date from the json file. should be the date of the the current day.
