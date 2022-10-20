@@ -36,11 +36,7 @@ public:
     ~JSONP() = default;
     // what is this date for? seperate from produce json?
     std::string getDate();
-    int getProduceCount();
-    int getProduceWeight(int i);
-    std::string getProduceType(int i);
     double getCPP(int i);
-    bool produceHasDate();
     std::string getFarm(int i);
     /**
      * @brief function to get the date from the json file. should be the date of the the current day.
@@ -103,6 +99,7 @@ public:
     std::string getSchool(int i);
     // may wont seperate functions for getting each datapiece ie. days since pick, date, weight, farm etc.
     std::string getSchoolType(int i);
+    
     double getSchoolBudget(int i);
 
     /**
