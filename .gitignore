@@ -40,4 +40,5 @@ TestBuild
 # emacs backup files
 *~
 
+#vs files
 .vs
