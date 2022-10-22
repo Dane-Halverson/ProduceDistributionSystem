@@ -21,9 +21,7 @@ class JSONP
 {
 private:
     std::string produceFilename;
-    std::string schoolFilename;
     nlohmann::json Produce;
-    nlohmann::json Schools;
 
 public:
     /**
@@ -31,7 +29,7 @@ public:
      * @param pf filename for produce json file
      * @param sf filename for schools json file
      */
-    JSONP(std::string pf, std::string sf);
+    JSONP(std::string pf);
 
     ~JSONP() = default;
 
