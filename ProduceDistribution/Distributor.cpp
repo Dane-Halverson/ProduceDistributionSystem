@@ -103,7 +103,7 @@ std::string Distributor::getNextFarm() {
 }
 
 void Distributor::buyNext(SchoolPtr s) {
-    if (s->getBudget() < next->get
+    if (s->getBudget() < (next->getGetPrice()*next->getWeight())
     s->addProduce(next);
     next = nullptr;
     stageNext();
