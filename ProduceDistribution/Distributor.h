@@ -12,6 +12,7 @@ struct CompareProduce;
 #include "ProduceInterface.h"
 #include "School.h"
 #include "JSONP.h"
+#include "JSONPS.h"
 #include <memory>
 #include <vector>
 #include <string>
@@ -27,7 +28,8 @@ private:
     HeapPtr produceHeap = std::make_shared<BinaryHeap<ProPtr, CompareProduce>>();
     HeapPtr rejectedProduceHeap = std::make_shared<BinaryHeap<ProPtr, CompareProduce>>();
     std::vector<School> schools;
-    std::shared_ptr<JSONP> parser;
+    std::shared_ptr<JSONP> produceParser;
+    std::shared_ptr<JSONS> schoolParser;
     ProPtr next;
     void makeLog();
     void swapHeaps();

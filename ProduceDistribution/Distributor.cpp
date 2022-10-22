@@ -4,7 +4,9 @@
 
 Distributor::Distributor(std::string producefile, std::string schoolfile)
 {
-    parser = std::make_shared<JSONP>(producefile, schoolfile);
+    produceParser = std::make_shared<JSONP>(producefile);
+    schoolParser = std::make_shared<JSONS>(schoolfile);
+
     addProduce();
 }
 
@@ -34,27 +36,27 @@ void Distributor::addProduce()
     ProduceFactory p;
     for (auto i = 0; i < parser->getProduceCount(); ++i)
     {
-        std::string type = parser->getProduceType(i);
-        std::cout << parser->getProduceType(i) <<"\n";
-        int weight = parser->getProduceWeight(i);
-        std::string date = parser->getDate();
+        std::string type = produceParser->getProduceType(i);
+        std::cout << produceParser->getProduceType(i) <<"\n";
+        int weight = produceParser->getProduceWeight(i);
+        std::string date = produceParser->getDate();
         int dayspick;
         
-        if (parser->produceHasDateOfPick(i))
+        if (produceParser->produceHasDateOfPick(i))
         {
-            Date d1(parser->getDate());
-            Date d2(parser->getProduceDateOfPick(i));
+            Date d1(produceParser->getDate());
+            Date d2(produceParser->getProduceDateOfPick(i));
             dayspick = d1.getDaysSinceZero() - d2.getDaysSinceZero();
         }
         else
         {
             
-            dayspick = parser->getDaysSincePicked();
+            dayspick = produceParser->getDaysSincePicked();
         }
-        std::string name = parser->getFarm(i);
-        double price = parser->getCPP(i);
+        std::string name = produceParser->getFarm(i);
+        double price = produceParser->getCPP(i);
 
-        std::cout << parser->getDate() << "\n";
+        std::cout << produceParser->getDate() << "\n";
 
         ProPtr temp = p.makeProduce(type, weight, date, dayspick, name, price);
         std::cout << "factory worked\n";
