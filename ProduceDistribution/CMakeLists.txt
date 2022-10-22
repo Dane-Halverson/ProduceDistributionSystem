@@ -139,3 +139,16 @@ if (MAKE_CATCH2_TESTS)
   target_link_libraries(testDistributor PUBLIC Date)
 
 endif()
+
+add_library( FoodDistributor
+    Distributor.h Distributor.cpp
+    JSONP.h JSONP.cpp
+    JSONS.h JSONS.cpp
+    School.h School.cpp
+    BinaryHeap.h 
+)
+
+target_link_libraries(FoodDistributor PUBLIC Produce)
+target_link_libraries(FoodDistributor PUBLIC Date)
+
+target_include_directories (FoodDistributor PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
