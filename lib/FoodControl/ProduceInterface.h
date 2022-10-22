@@ -57,7 +57,7 @@ class Produce {
      */
     std::string getFarm() const;
 
-    std::string getExperString();
+    virtual std::string getExperString();
 
     virtual std::string getType() {return "produce";}
 

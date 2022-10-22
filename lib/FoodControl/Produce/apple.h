@@ -16,7 +16,8 @@ private:
 
 public:
    apple(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price);
-   std::string getType() {return "apple";};
+
+   std::string getType() override {return "apple";};
 };
 
 apple::apple(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price)

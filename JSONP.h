@@ -96,7 +96,7 @@ public:
      */
     int getSchoolCount();
 
-    /**
+    /**cd 
      * @brief gets the name of the chosen school
      * @param i the number or index of the school to get the name of
      * @return a string of the school name

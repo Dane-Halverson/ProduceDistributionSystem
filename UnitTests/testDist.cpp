@@ -5,7 +5,7 @@
 
 TEST_CASE("Distributor Basic Operations") {
     Distributor d("../testJSONP.json", "../testJSONS.json");
-    //d.grabNext();
+    d.stageNext();
     //REQUIRE(d.getNextType() == "tomatoes");
     
 }

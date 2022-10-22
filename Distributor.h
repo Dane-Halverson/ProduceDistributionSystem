@@ -24,8 +24,8 @@ using HeapPtr = std::shared_ptr<BinaryHeap<ProPtr, CompareProduce>>;
 class Distributor
 {
 private:
-    HeapPtr produceHeap;
-    HeapPtr rejectedProduceHeap;
+    HeapPtr produceHeap = std::make_shared<BinaryHeap<ProPtr, CompareProduce>>();
+    HeapPtr rejectedProduceHeap = std::make_shared<BinaryHeap<ProPtr, CompareProduce>>();
     std::vector<School> schools;
     std::shared_ptr<JSONP> parser;
     ProPtr next;

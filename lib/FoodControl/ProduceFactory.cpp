@@ -18,7 +18,7 @@ std::shared_ptr<Produce> ProduceFactory::makeProduce(std::string type, int n, st
     else if (type == "carrots"){
         NewProduce = std::make_shared<Produce>(carrots(n, date, daysSincePick, nameOfFarm, price));
     }
-    else if (type == "apple"){
+    else if (type == "apples"){
         NewProduce = std::make_shared<Produce>(apple(n, date, daysSincePick, nameOfFarm, price));
     }
     else if (type == "onions"){

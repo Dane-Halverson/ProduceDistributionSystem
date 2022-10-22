@@ -70,13 +70,11 @@ template <typename t,
           typename Comparator>
 void BinaryHeap<t, Comparator>::insert(const t &T)
 {
-    std::cout << "insert called\n";
     if (heapSize == int(cursize - 2))
     {
         cursize = cursize * 2;
         m_heap.resize(cursize);
     }
-    std::cout << "checked size\n";
     m_heap[m_nextIdx] = T;
     floatUp(m_nextIdx);
     m_nextIdx = m_nextIdx + 1;
