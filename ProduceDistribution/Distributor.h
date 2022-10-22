@@ -18,6 +18,7 @@ struct CompareProduce;
 #include <string>
 using ProPtr = std::shared_ptr<Produce>;
 using HeapPtr = std::shared_ptr<BinaryHeap<ProPtr, CompareProduce>>;
+using SchoolPtr = std::shared_ptr<School>;
 
 /**
  * @brief class for distributing produce to schools
@@ -27,14 +28,16 @@ class Distributor
 private:
     HeapPtr produceHeap = std::make_shared<BinaryHeap<ProPtr, CompareProduce>>();
     HeapPtr rejectedProduceHeap = std::make_shared<BinaryHeap<ProPtr, CompareProduce>>();
-    std::vector<School> schools;
+    std::vector<SchoolPtr> schools;
     std::shared_ptr<JSONP> produceParser;
-    std::shared_ptr<JSONS> schoolParser;
+    std::shared_ptr<JSONPS> schoolParser;
     ProPtr next;
     void makeLog();
     void swapHeaps();
     void addProduce();
     void addSchools();
+    SchoolPtr findSchool(std::string name);
+
     
 
 public:

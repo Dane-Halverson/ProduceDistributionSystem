@@ -8,6 +8,7 @@ Distributor::Distributor(std::string producefile, std::string schoolfile)
     schoolParser = std::make_shared<JSONS>(schoolfile);
 
     addProduce();
+    addSchools();
 }
 
 void Distributor::swapHeaps()
@@ -66,6 +67,15 @@ void Distributor::addProduce()
     }
 }
 
+void Distributor::addSchools() {
+    for (auto i = 0; i < schoolParser->getSchoolCount(); ++i)
+        std::string name = schoolParser->getSchool(i);
+        std::string type = schoolParser->getSchoolType(i);
+        double budget = schoolParser->getSchoolBudget(i);
+        schools.push_back(std::make_shared<School>(name, type, budget));
+    }
+}
+
 bool Distributor::produceStaged() {
     if (next == nullptr) {
         return false;
@@ -92,9 +102,20 @@ std::string Distributor::getNextFarm() {
     return next->getFarm();
 }
 
-void Distributor::buyNext(School s) {
-    s.addProduce(next);
+void Distributor::buyNext(SchoolPtr s) {
+    if (s->getBudget() < next->get
+    s->addProduce(next);
     next = nullptr;
     stageNext();
 }
+
+SchoolPtr Distributor::findSchool(std::string name) {
+    for (auto i = 0; i < schools.size(); ++i) {
+        if (schools[i]->getName() == name) {
+            return schools[i];
+        }
+    }
+    return nullptr;
+}
+
 
