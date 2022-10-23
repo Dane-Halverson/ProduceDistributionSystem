@@ -1,14 +1,14 @@
 #include <memory>
 
 #include "FoodDist_GUI.h"
-#include "FoodDist_DataTester.h"
+#include "foodDistAdapter.h"
 
 int main(int, char**)
 {
   FoodDist_GUI foodDistGUI;
 
   // Create the Data Source and provide to the GUI
-  std::shared_ptr<FoodDist_DataSource> fdistSysPtr = std::make_shared<FoodDist_DataTester>();
+  std::shared_ptr<FoodDist_DataSource> fdistSysPtr = std::make_shared<FoodDistributor>("ProduceDistribution/testJSONP", "ProduceDistribution/testJSONS");
   foodDistGUI.assignFoodDistSystem( fdistSysPtr );
 
   foodDistGUI.mainLoop();

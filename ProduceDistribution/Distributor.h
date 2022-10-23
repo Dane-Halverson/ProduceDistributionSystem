@@ -46,7 +46,7 @@ public:
 
     bool stageNext();
     void pass();
-    void buyNext(School s);
+    void buyNext(SchoolPtr s);
 
     bool produceStaged();
     int getNextWeight();
@@ -54,6 +54,13 @@ public:
     std::string getNextEperation();
     double getNextPrice();
     std::string getNextFarm();
+
+    std::string getSchoolName(int index) const;
+    double getSchoolBudget(int index) const;
+    std::string getSchoolType(int index) const;
+    int getSchoolCount() const;
+    void setSchoolBudget(int index, float amount);
+
 
 
 };
