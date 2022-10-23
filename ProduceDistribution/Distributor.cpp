@@ -5,7 +5,7 @@
 Distributor::Distributor(std::string producefile, std::string schoolfile)
 {
     produceParser = std::make_shared<JSONP>(producefile);
-    schoolParser = std::make_shared<JSONS>(schoolfile);
+    schoolParser = std::make_shared<JSONPS>(schoolfile);
 
     addProduce();
     addSchools();
@@ -35,7 +35,7 @@ bool Distributor::stageNext()
 void Distributor::addProduce()
 {
     ProduceFactory p;
-    for (auto i = 0; i < parser->getProduceCount(); ++i)
+    for (auto i = 0; i < produceParser->getProduceCount(); ++i)
     {
         std::string type = produceParser->getProduceType(i);
         std::cout << produceParser->getProduceType(i) <<"\n";
@@ -68,7 +68,7 @@ void Distributor::addProduce()
 }
 
 void Distributor::addSchools() {
-    for (auto i = 0; i < schoolParser->getSchoolCount(); ++i)
+    for (auto i = 0; i < schoolParser->getSchoolCount(); ++i) {
         std::string name = schoolParser->getSchool(i);
         std::string type = schoolParser->getSchoolType(i);
         double budget = schoolParser->getSchoolBudget(i);
@@ -103,7 +103,13 @@ std::string Distributor::getNextFarm() {
 }
 
 void Distributor::buyNext(SchoolPtr s) {
-    if (s->getBudget() < (next->getGetPrice()*next->getWeight())
+    if (s->getBudget() < (next->getGetPrice()*1) {
+        std::string message = "error: school doesn't have enough budget to buy this produce\n";
+        throw message;
+    }
+    else if (s->getBudget() < (next->getGetPrice()*next->getWeight()) {
+        s->getBudget()
+    }
     s->addProduce(next);
     next = nullptr;
     stageNext();
