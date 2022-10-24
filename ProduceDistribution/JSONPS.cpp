@@ -1,5 +1,12 @@
 #include "JSONPS.h"
 
+JSONPS::JSONPS(std::string sf) 
+{
+    std::ifstream schoolStream(sf);
+    schoolStream >> Schools;
+}
+
+
 int JSONPS::getSchoolCount()
 {
     nlohmann::json schoolArr = Schools["schools"];

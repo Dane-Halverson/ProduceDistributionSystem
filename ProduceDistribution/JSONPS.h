@@ -50,9 +50,4 @@ public:
     double getSchoolBudget(int i);
 };
 
-JSONPS::JSONPS(std::string sf) 
-{
-    std::ifstream schoolStream(sf);
-    schoolStream >> Schools;
-}
 

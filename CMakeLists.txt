@@ -101,5 +101,5 @@ add_executable( foodDist
 
 target_link_libraries (foodDist FoodDistributor)
 target_link_libraries (foodDist ${GLEW_LIBRARIES})
-target_link_libraries (glfw ${GLFW_STATIC_LIBRARIES})
+target_link_libraries (foodDist glfw ${GLFW_STATIC_LIBRARIES})
 

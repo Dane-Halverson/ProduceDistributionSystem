@@ -165,3 +165,8 @@ void Distributor::setSchoolBudget(int index, float amount)
 {
     schools[index]->setBudget(amount);
 }
+
+void Distributor::pass() {
+    rejectedProduceHeap->insert(next);
+    next = nullptr;
+}
