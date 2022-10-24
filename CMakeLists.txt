@@ -11,6 +11,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 #
 # Use Doxygen to make the documentation for the code
 #
+
 find_package(Doxygen OPTIONAL_COMPONENTS dot mscgen dia)
 if (DOXYGEN_FOUND)
 
@@ -18,7 +19,7 @@ if (DOXYGEN_FOUND)
   set(DOXYGEN_CALL_GRAPH YES)
   set(DOXYGEN_EXTRACT_ALL YES)
 
-  doxygen_add_docs(foodDistDocs ${PROJECT_SOURCE_DIR})
+  doxygen_add_docs(foodDistDocs2 ${PROJECT_SOURCE_DIR})
 else (DOXYGEN_FOUND)
   message("Doxygen need to be installed to generate the doxygen documentation")
 endif (DOXYGEN_FOUND)
@@ -84,7 +85,7 @@ include_directories(${CMAKE_SOURCE_DIR}/ProduceDistribution)
 
 add_executable( foodDist
  foodDist.cpp
- FoodDistAdapter.h 
+ foodDistAdapter.h 
 
  FoodDist_DataSource.h 
  FoodDist_GUI.cpp FoodDist_GUI.h

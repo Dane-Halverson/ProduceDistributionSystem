@@ -9,7 +9,7 @@ if (DOXYGEN_FOUND)
   set(DOXYGEN_CALL_GRAPH YES)
   set(DOXYGEN_EXTRACT_ALL YES)
 
-  doxygen_add_docs(docs ${PROJECT_SOURCE_DIR})
+  doxygen_add_docs(DistributorDocs ${PROJECT_SOURCE_DIR})
 else (DOXYGEN_FOUND)
   message("Doxygen need to be installed to generate the doxygen documentation")
 endif (DOXYGEN_FOUND)
@@ -98,6 +98,7 @@ if (MAKE_CATCH2_TESTS)
   ADD_EXECUTABLE (testDistributor
     UnitTests/testDist.cpp 
     JSONP.h JSONP.cpp 
+    JSONPS.h JSONPS.cpp
     Distributor.h Distributor.cpp 
     School.h School.cpp
   )

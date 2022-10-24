@@ -7,15 +7,13 @@
  * @date 10/18/2022
  */
 
-JSONP::JSONP(std::string pf, std::string sf) : produceFilename(pf), schoolFilename(sf)
+JSONP::JSONP(std::string pf) : produceFilename(pf)
 {
     //parse of produce file
     std::ifstream produceStream(pf);
     //parse of farm file
-    std::ifstream schoolStream(sf);
     //inserting files into json object
     produceStream >> Produce;
-    schoolStream >> Schools;
 }
 
 std::string JSONP::getDate(){
@@ -75,27 +73,4 @@ std::string JSONP::getFarm(int i)
     return produceArr[i]["farm"];
 }
 
-int JSONP::getSchoolCount()
-{
-    nlohmann::json schoolArr = Schools["schools"];
-    return int(schoolArr.size());
-}
 
-std::string JSONP::getSchool(int i)
-{
-    nlohmann::json schoolArr = Schools["schools"];
-    return schoolArr[i]["name"];
-}
-
-// may wont seperate functions for getting each datapiece ie. days since pick, date, weight, farm etc.
-std::string JSONP::getSchoolType(int i)
-{
-    nlohmann::json schoolArr = Schools["schools"];
-    return schoolArr[i]["type"];
-}
-
-double JSONP::getSchoolBudget(int i)
-{
-    nlohmann::json schoolArr = Schools["schools"];
-    return schoolArr[i]["budget"];
-}

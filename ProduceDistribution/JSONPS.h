@@ -16,8 +16,8 @@
 class JSONPS
 {
 private:
-    std::string schoolFilename;
     nlohmann::json Schools;
+
 public:
     JSONPS(std::string sf);
     ~JSONPS() = default;
@@ -50,10 +50,9 @@ public:
     double getSchoolBudget(int i);
 };
 
-JSONPS::JSONPS(std::string sf)
+JSONPS::JSONPS(std::string sf) 
 {
+    std::ifstream schoolStream(sf);
+    schoolStream >> Schools;
 }
 
-JSONPS::~JSONPS()
-{
-}

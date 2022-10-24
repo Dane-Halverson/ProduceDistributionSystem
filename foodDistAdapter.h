@@ -24,7 +24,7 @@ public:
 		weight = dist->getNextWeight();
 		cost = dist->getNextPrice();
 		farm = dist->getNextFarm();
-		dist->stageNext();
+		return dist->stageNext();
 	}
 
 	void returnMostRecentProduceAndLowerPriority() {dist->pass();}
