@@ -15,14 +15,14 @@ public:
 
 	std::string retrieveSchoolType(int schoolIndex) const {return dist->getSchoolType(schoolIndex);}
 
-	float retrieveSchoolBudget(int schoolIndex) const {return dist->getSchoolBudget(schoolIndex);}
+	float retrieveSchoolBudget(int schoolIndex) const {return float(dist->getSchoolBudget(schoolIndex));}
 
 	void changeSchoolBudget(int schoolIndex, float newBudget) {dist->setSchoolBudget(schoolIndex, newBudget);}
 
 	bool retrieveHightestPriorityProduce(std::string &prType, float &weight, float &cost, std::string &farm) {
 		prType = dist->getNextType();
-		weight = dist->getNextWeight();
-		cost = dist->getNextPrice();
+		weight = float(dist->getNextWeight());
+		cost = float(dist->getNextPrice());
 		farm = dist->getNextFarm();
 		return dist->stageNext();
 	}

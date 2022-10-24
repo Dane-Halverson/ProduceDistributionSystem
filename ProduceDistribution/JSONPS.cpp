@@ -10,7 +10,7 @@ JSONPS::JSONPS(std::string sf)
 int JSONPS::getSchoolCount()
 {
     nlohmann::json schoolArr = Schools["schools"];
-    return schoolArr.size();
+    return int(schoolArr.size());
 }
 
 std::string JSONPS::getSchool(int i)

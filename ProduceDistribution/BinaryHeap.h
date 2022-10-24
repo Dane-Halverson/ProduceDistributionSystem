@@ -108,7 +108,7 @@ void BinaryHeap<t, Comparator>::floatUp(const unsigned int idx)
         std::cout << "returned correctly\n";
     }
 
-    auto parentIdx = floor(idx / 2);
+    auto parentIdx = int(floor(idx / 2));
 
     if (m_compObj(m_heap[parentIdx], m_heap[idx]))
     {

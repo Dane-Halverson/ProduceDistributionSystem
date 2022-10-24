@@ -158,7 +158,7 @@ std::string Distributor::getSchoolType(int index) const
 
 int Distributor::getSchoolCount() const
 {
-    return schools.size();
+    return int(schools.size());
 }
 
 void Distributor::setSchoolBudget(int index, float amount)
