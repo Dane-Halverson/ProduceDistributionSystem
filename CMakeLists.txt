@@ -79,8 +79,10 @@ set(GLFW_STATIC_LIBRARIES "${GLFW_LIBRARIES}")
 # imgui source is within the imgui/ folder so make
 # sure we add that as one of the include directories
 include_directories(${CMAKE_SOURCE_DIR}/imgui)
+
 add_subdirectory(${CMAKE_SOURCE_DIR}/ProduceDistribution)
 include_directories(${CMAKE_SOURCE_DIR}/ProduceDistribution)
+
 
 
 add_executable( foodDist
@@ -94,8 +96,8 @@ add_executable( foodDist
  imgui/imgui_demo.cpp imgui/imgui_draw.cpp imgui/imgui_tables.cpp imgui/imgui_widgets.cpp
  imgui/imgui_impl_glfw.cpp imgui/imgui_impl_glfw.h imgui/imgui_impl_opengl3.cpp imgui/imgui_impl_opengl3.h
 )
-target_link_libraries (foodDist PUBLIC FoodDistributor)
 
+target_link_libraries (foodDist PUBLIC FoodDistributor)
 target_link_libraries (foodDist ${GLEW_LIBRARIES})
-#target_link_libraries (foodDist glfw ${GLFW_STATIC_LIBRARIES})
+target_link_libraries (glfw ${GLFW_STATIC_LIBRARIES})
 

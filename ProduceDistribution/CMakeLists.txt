@@ -16,7 +16,7 @@ endif (DOXYGEN_FOUND)
 
 SET(CMAKE_CXX_STANDARD 17)
 
-include_directories(${CMAKE_SOURCE_DIR})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 option(MAKE_CATCH2_TESTS "whether or not to compile catch2 tests" OFF)
 
@@ -24,7 +24,7 @@ option(MAKE_CATCH2_TESTS "whether or not to compile catch2 tests" OFF)
 #
 # Catch2
 if (MAKE_CATCH2_TESTS)
-  add_subdirectory(lib/Catch2-devel)
+  add_subdirectory(${CMAKE_CURRENT_SOURCE_DIRECTORY}lib/Catch2-devel)
 endif()
 # Json
 #
@@ -42,14 +42,14 @@ set(JSON_BuildTests
 # Don't use include(nlohmann_json/CMakeLists.txt) since that carries with it unintended consequences that will break the
 # build.  It's generally discouraged (although not necessarily well documented as such) to use include(...) for pulling
 # in other CMake projects anyways.
-add_subdirectory(lib/json-develop)
-add_subdirectory(lib/FoodControl)
-add_subdirectory(lib/Date)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/lib/json-develop)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/lib/FoodControl)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/lib/Date)
 
 
-include_directories(${CMAKE_SOURCE_DIR}/lib/json-develop/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib/json-develop/include)
 
-include_directories(${CMAKE_SOURCE_DIR}/lib/Date)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib/Date)
 #add_subdirectory(testcases)
 
 
