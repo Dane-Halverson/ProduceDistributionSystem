@@ -8,7 +8,8 @@ int main(int, char**)
   FoodDist_GUI foodDistGUI;
 
   // Create the Data Source and provide to the GUI
-  std::shared_ptr<FoodDist_DataSource> fdistSysPtr = std::make_shared<FoodDistributor>("ProduceDistribution/testJSONP", "ProduceDistribution/testJSONS");
+  std::shared_ptr<FoodDist_DataSource> fdistSysPtr =
+	  std::make_shared<FoodDistributor>("testJSONP.json", "testJSONS.json");
   foodDistGUI.assignFoodDistSystem( fdistSysPtr );
 
   foodDistGUI.mainLoop();

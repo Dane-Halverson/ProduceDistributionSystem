@@ -105,7 +105,6 @@ void BinaryHeap<t, Comparator>::floatUp(const unsigned int idx)
     if (idx <= m_rootIdx)
     {
         return;
-        std::cout << "returned correctly\n";
     }
 
     auto parentIdx = int(floor(idx / 2));
