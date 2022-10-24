@@ -76,11 +76,11 @@ int Date::daysSinceZero()
 
     if (months > 2)
     {
-        leapyears = floor(years / 4) - floor(years / 100) + floor(years / 400);
+        leapyears = int(floor(years / 4) - floor(years / 100) + floor(years / 400));
     }
     else
     {
-        leapyears = floor((years - 1) / 4) - floor((years - 1) / 100) + floor((years - 1) / 400);
+        leapyears = int(floor((years - 1) / 4) - floor((years - 1) / 100) + floor((years - 1) / 400));
     }
 
     return leapyears + (years * 365) + monthDays + days;

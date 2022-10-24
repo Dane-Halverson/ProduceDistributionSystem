@@ -29,12 +29,12 @@ void DateParser::ParseDate(std::string date)
 
 void DateParser::ParseMonDDYYYY(std::string date)
 {
-    int found = date.find_first_of(' ');
+    int found = int(date.find_first_of(' '));
     std::string months = date.substr(0, 3);
     int j = 0;
     for (auto i : months)
     {
-        months[j] = tolower(i);
+        months[j] = char(tolower(i));
         ++j;
     }
     if (months == "jan")
@@ -64,7 +64,7 @@ void DateParser::ParseMonDDYYYY(std::string date)
 
     date = date.substr(found + 1, date.size());
 
-    found = date.find_first_of(' ');
+    found = int(date.find_first_of(' '));
     day = std::stoi(date.substr(0, found));
     date = date.substr(found + 1, date.size());
 
@@ -73,13 +73,13 @@ void DateParser::ParseMonDDYYYY(std::string date)
 
 void DateParser::ParseMMDDYYYY(std::string date)
 {
-    int found = date.find_first_of('/');
+    int found = int(date.find_first_of('/'));
     std::string months = date.substr(0, found);
     month = std::stoi(months);
 
     date = date.substr(found + 1, date.size());
 
-    found = date.find_first_of('/');
+    found = int(date.find_first_of('/'));
     day = std::stoi(date.substr(0, found));
     date = date.substr(found + 1, date.size());
 

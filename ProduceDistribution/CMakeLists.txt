@@ -143,12 +143,14 @@ endif()
 add_library( FoodDistributor
     Distributor.h Distributor.cpp
     JSONP.h JSONP.cpp
-    JSONS.h JSONS.cpp
+    JSONPS.h JSONPS.cpp
     School.h School.cpp
     BinaryHeap.h 
 )
 
 target_link_libraries(FoodDistributor PUBLIC Produce)
 target_link_libraries(FoodDistributor PUBLIC Date)
+target_link_libraries(FoodDistributor PRIVATE nlohmann_json::nlohmann_json)
+
 
 target_include_directories (FoodDistributor PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

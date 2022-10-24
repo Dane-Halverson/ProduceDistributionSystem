@@ -30,7 +30,7 @@ int JSONP::getDaysSincePicked()
 int JSONP::getProduceCount()
 {
     nlohmann::json produceArr = Produce["produce"];
-    return produceArr.size();
+    return int(produceArr.size());
 }
 
 int JSONP::getProduceWeight(int i)
@@ -78,7 +78,7 @@ std::string JSONP::getFarm(int i)
 int JSONP::getSchoolCount()
 {
     nlohmann::json schoolArr = Schools["schools"];
-    return schoolArr.size();
+    return int(schoolArr.size());
 }
 
 std::string JSONP::getSchool(int i)
