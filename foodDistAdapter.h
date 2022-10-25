@@ -20,11 +20,13 @@ public:
 	void changeSchoolBudget(int schoolIndex, float newBudget) {dist->setSchoolBudget(schoolIndex, newBudget);}
 
 	bool retrieveHightestPriorityProduce(std::string &prType, float &weight, float &cost, std::string &farm) {
-		prType = dist->getNextType();
-		weight = float(dist->getNextWeight());
-		cost = float(dist->getNextPrice());
-		farm = dist->getNextFarm();
-		return dist->stageNext();
+		if (dist->stageNext()) {
+			prType = dist->getNextType();
+			weight = float(dist->getNextWeight());
+			cost = float(dist->getNextPrice());
+			farm = dist->getNextFarm();
+		}
+		return dist->produceStaged();
 	}
 
 	void returnMostRecentProduceAndLowerPriority() {dist->pass();}

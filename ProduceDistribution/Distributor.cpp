@@ -10,7 +10,6 @@ Distributor::Distributor(std::string producefile, std::string schoolfile)
     addProduce();
     addSchools();
 
-    stageNext();
 }
 
 void Distributor::swapHeaps()
@@ -22,6 +21,7 @@ void Distributor::swapHeaps()
 
 bool Distributor::stageNext()
 {
+    next = nullptr;
     if (produceHeap->getSize() == 0)
     {
         swapHeaps();
@@ -115,18 +115,8 @@ std::string Distributor::getNextFarm()
 
 void Distributor::buyNext(SchoolPtr s)
 {
-    /*
-    if (s->getBudget() < (next->getPricePerPound()*1)) {
-        std::string message = "error: school doesn't have enough budget to buy this produce\n";
-        throw message;
-    }
-    else if (s->getBudget() < (next->getPricePerPound()*next->getWeight())) {
-        s->getBudget();
-    }
-    */
     s->addProduce(next);
     next = nullptr;
-    stageNext();
 }
 
 SchoolPtr Distributor::findSchool(std::string name)
