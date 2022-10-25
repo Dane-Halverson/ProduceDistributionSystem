@@ -40,7 +40,6 @@ void Distributor::addProduce()
     for (auto i = 0; i < produceParser->getProduceCount(); ++i)
     {
         std::string type = produceParser->getProduceType(i);
-        std::cout << produceParser->getProduceType(i) << "\n";
         int weight = produceParser->getProduceWeight(i);
         std::string date = produceParser->getDate();
         int dayspick;
@@ -59,12 +58,9 @@ void Distributor::addProduce()
         std::string name = produceParser->getFarm(i);
         double price = produceParser->getCPP(i);
 
-        std::cout << produceParser->getDate() << "\n";
 
         ProPtr temp = p.makeProduce(type, weight, date, dayspick, name, price);
-        std::cout << "factory worked\n";
-        std::cout << temp->getType() << "\n";
-        std::cout << temp->getExperString() << "\n";
+        
         produceHeap->insert(temp);
     }
 }

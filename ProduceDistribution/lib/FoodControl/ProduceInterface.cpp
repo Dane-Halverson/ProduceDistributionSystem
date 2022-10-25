@@ -1,8 +1,8 @@
 #include "ProduceInterface.h"
 
-Produce::Produce(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price) : weight(n), farm(nameOfFarm)
+Produce::Produce(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price) 
+    : life(), weight(n), farm(nameOfFarm), pricePerPound(price)
 {
-    pricePerPound = price;
     experation.setDate(date);
     experation.addDays(life - daysSincePick);
 }

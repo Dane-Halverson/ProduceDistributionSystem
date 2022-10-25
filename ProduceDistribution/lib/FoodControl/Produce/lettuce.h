@@ -17,7 +17,7 @@ private:
 public:
    lettuce(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price);
 
-   std::string getType() {return "lettuce";}
+   std::string getType() override {return "lettuce";}
 };
 
 lettuce::lettuce(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price)

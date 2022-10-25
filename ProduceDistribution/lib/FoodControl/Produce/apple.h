@@ -2,6 +2,7 @@
 
 #include "../ProduceInterface.h"
 #include <Date.h>
+#include <iostream>
 
 /**
 * @author Dane Halverson
@@ -25,6 +26,7 @@ apple::apple(int n, std::string date, int daysSincePick, std::string nameOfFarm,
 {
     experation.setDate(date);
     experation.addDays(life - daysSincePick);
+
 }
 
 
