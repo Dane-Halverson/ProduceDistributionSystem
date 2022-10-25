@@ -5,9 +5,12 @@
 
 
 TEST_CASE("JSONP basic operations") {
-    JSONP test("../testJSONP.json");
-    JSONPS testSchool("../testJSONS.json");
+    JSONP test("testJSONP.json");
+    std::cout << "made test\n";
+    JSONPS testSchool("testJSONS.json");
+    std::cout << "made testSchool\n";
     REQUIRE(test.getDate() == "Sept 18 2021");
+    std::cout << test.getDate() << "\n";
     REQUIRE(test.produceHasDateOfPick(0) == false);
     REQUIRE(test.getProduceCount() == 3);
     REQUIRE(test.getDaysSincePicked() == 1);
