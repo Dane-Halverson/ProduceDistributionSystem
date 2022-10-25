@@ -24,4 +24,5 @@ TEST_CASE("produce basic operations")
 
     ProPtr tomptr = std::make_shared<tomatoes>(10, "Sept 18 2021", 1, "farm", 3.4);
     REQUIRE(tomptr->getExperString() == "Sep 20 2021");
+    REQUIRE(tomptr->getType() == "tomatoes");
 }
