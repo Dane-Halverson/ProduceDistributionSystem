@@ -21,6 +21,9 @@ public:
 
 carrots::carrots(int n, std::string date, int daysSincePick, std::string nameOfFarm, double price)
 : Produce(n, date, daysSincePick, nameOfFarm, price)
-{}
+{
+    experation.setDate(date);
+    experation.addDays(life - daysSincePick);
+}
 
 
