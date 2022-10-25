@@ -59,6 +59,6 @@ class Produce {
 
     virtual std::string getExperString();
 
-    virtual std::string getType() {return "produce";}
+    virtual std::string getType() = 0;
 
 };
