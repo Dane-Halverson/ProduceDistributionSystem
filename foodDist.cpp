@@ -12,8 +12,8 @@ int main(int, char**)
   FoodDist_GUI foodDistGUI;
 
 
-  std::string pf = "../testJSONP.json";
-  std::string sf = "../testJSONS.json";
+  std::string pf = "testJSONP.json";
+  std::string sf = "testJSONS.json";
 
 
 
