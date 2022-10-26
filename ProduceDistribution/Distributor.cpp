@@ -26,7 +26,9 @@ Distributor::~Distributor() {
     ProduceOut.setWeight(next->getWeight());
     ProduceOut.setCost(float(next->getPricePerPound()));
     ProduceOut.setFarm(next->getFarm());
-    ProduceOut.setDoP(next->getExperString());
+    Date d(curdate.getString());
+    d.addDays(0 - produceParser->getDaysSincePicked());
+    ProduceOut.setDoP(d.getString());
     ProduceOut.vecPush();
 
     produceHeap->remove();
@@ -60,6 +62,7 @@ bool Distributor::stageNext()
 
 void Distributor::addProduce()
 {
+    curdate.setDate(produceParser->getDate());
     ProduceFactory p;
     for (auto i = 0; i < produceParser->getProduceCount(); ++i)
     {

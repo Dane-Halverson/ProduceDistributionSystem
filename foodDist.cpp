@@ -13,7 +13,7 @@ int main(int, char**)
 
 
   std::string pf = "produce.json";
-  std::string sf = "school.json";
+  std::string sf = "schools.json";
 
 
 

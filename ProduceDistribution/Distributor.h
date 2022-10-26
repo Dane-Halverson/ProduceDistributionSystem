@@ -33,6 +33,7 @@ private:
     std::shared_ptr<JSONP> produceParser;
     std::shared_ptr<JSONPS> schoolParser;
     ProPtr next;
+    Date curdate;
 
     void swapHeaps();
     void addProduce();
