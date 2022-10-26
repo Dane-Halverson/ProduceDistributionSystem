@@ -17,23 +17,23 @@ void JSONOut::setDate(std::string s) {
     ProdJSON["date"] = s;
 }
 
-void setType(std::string s) {
+void JSONOut::setType(std::string s) {
     ProduceJ["type"] = s;
 }
 
-void setWeight(int w) {
+void JSONOut::setWeight(int w) {
     ProduceJ["weight"] = w;
 }
 
-void setCost(float f) {
+void JSONOut::setCost(float f) {
     ProduceJ["cost"] = f;
 }
 
-void setFarm(std::string s) {
+void JSONOut::setFarm(std::string s) {
     ProduceJ["farm"] = s;
 }
 
-void setDoP(std::string s) {
+void JSONOut::setDoP(std::string s) {
     ProduceJ["dateOfPick"] = s;
 }
 

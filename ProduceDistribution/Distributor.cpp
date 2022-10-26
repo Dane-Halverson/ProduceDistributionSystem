@@ -15,13 +15,16 @@ Distributor::Distributor(std::string producefile, std::string schoolfile)
 Distributor::~Distributor() {
     JSONOut ProduceOut;
     //setting current date
+    if (next != nullptr) {
+        produceHeap->insert(next);
+    }
     ProduceOut.setDate("9/11/2001");
-    for (int i = 0; i < produceHeap->getSize(); i++) {
+    while (stageNext()) {
     
     //setting each produce for json format
     ProduceOut.setType(next->getType());
     ProduceOut.setWeight(next->getWeight());
-    ProduceOut.setCost(next->getPricePerPound());
+    ProduceOut.setCost(float(next->getPricePerPound()));
     ProduceOut.setFarm(next->getFarm());
     ProduceOut.setDoP(next->getExperString());
     ProduceOut.vecPush();
