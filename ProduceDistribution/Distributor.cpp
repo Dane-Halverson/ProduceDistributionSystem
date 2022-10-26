@@ -12,6 +12,27 @@ Distributor::Distributor(std::string producefile, std::string schoolfile)
 
 }
 
+Distributor::~Distributor() {
+    JSONOut ProduceOut;
+    //setting current date
+    ProduceOut.setDate("9/11/2001");
+    for (int i = 0; i < produceHeap->getSize(); i++) {
+    
+    //setting each produce for json format
+    ProduceOut.setType(next->getType());
+    ProduceOut.setWeight(next->getWeight());
+    ProduceOut.setCost(next->getPricePerPound());
+    ProduceOut.setFarm(next->getFarm());
+    ProduceOut.setDoP(next->getExperString());
+    ProduceOut.vecPush();
+
+    produceHeap->remove();
+
+    }
+
+    ProduceOut.OUT();
+}
+
 void Distributor::swapHeaps()
 {
     HeapPtr temp = produceHeap;

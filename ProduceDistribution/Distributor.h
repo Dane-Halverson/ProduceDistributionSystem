@@ -13,6 +13,7 @@ struct CompareProduce;
 #include "School.h"
 #include "JSONP.h"
 #include "JSONPS.h"
+#include "JSONOut.h"
 #include <memory>
 #include <vector>
 #include <string>
@@ -47,7 +48,7 @@ public:
      * @param schoolfile filepath for school json
      */
     Distributor(std::string producefile, std::string schoolfile);
-    ~Distributor() = default;
+    ~Distributor();
 
     /**
      * @brief stages the next produce of highest priority

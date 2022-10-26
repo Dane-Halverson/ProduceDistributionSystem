@@ -145,6 +145,7 @@ add_library( FoodDistributor
     Distributor.h Distributor.cpp
     JSONP.h JSONP.cpp
     JSONPS.h JSONPS.cpp
+    JSONOut.h JSONOut.cpp
     School.h School.cpp
     BinaryHeap.h 
 )
