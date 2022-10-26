@@ -109,11 +109,7 @@ std::string Distributor::getNextFarm()
     return next->getFarm();
 }
 
-void Distributor::buyNext(SchoolPtr s)
-{
-    s->addProduce(next);
-    next = nullptr;
-}
+
 
 SchoolPtr Distributor::findSchool(std::string name)
 {
