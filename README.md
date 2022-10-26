@@ -1,12 +1,14 @@
 # Produce Distribution System
 
 >Authors:
->Dane Halverson
->Marshall Bluhm
->Teddy Jeddeloh
+>Dane Halverson,
+>Marshall Bluhm,
+>Teddy Jeddeloh,
 >Timothy Okoroafor
 
 This a program that takes in two json files( one for produce and one for schools ) and opens a gui to distribute them. The json files must be named `produce.json` and `schools.json` and must be in the same folder as the executable.
+
+On close, will write a json file of the unused produce.
 
 
 
