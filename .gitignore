@@ -43,5 +43,5 @@ TestBuild
 #vs files
 .vs
 out
-!out/testJSONP.json
-!out/testJSONS.json
+!out/produce.json
+!out/schools.json

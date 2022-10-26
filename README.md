@@ -46,55 +46,55 @@ This a program that takes in two json files( one for produce and one for schools
 
 	"schools":  [
 
-	{
+		{
 
-	"type":  "middle",
+			"type":  "middle",
 
-	"name":  "Ordean East Middle School",
+			"name":  "Ordean East Middle School",
 
-	"budget":  320.00
+			"budget":  320.00
 
-	},
+		},
 
-	{
+		{
 
-	"type":  "middle",
+			"type":  "middle",
 
-	"name":  "Lincoln Park Middle School",
+			"name":  "Lincoln Park Middle School",
 
-	"budget":  320.00
+			"budget":  320.00
 
-	},
+		},
 
-	{
+		{
 
-	"type":  "hs",
+			"type":  "hs",
 
-	"name":  "Denfeld High School",
+			"name":  "Denfeld High School",
 
-	"budget":  820.00
+			"budget":  820.00
 
-	},
+		},
 
-	{
+		{
 
-	"type":  "ms",
+			"type":  "ms",
 
-	"name":  "Denfeld Middle School",
+			"name":  "Denfeld Middle School",
 
-	"budget":  820.00
+			"budget":  820.00
 
-	},
+		},
 
-	{
+		{
 
-	"type":  "elem",
+			"type":  "elem",
 
-	"name":  "Myers Wilkins Elementary School",
+			"name":  "Myers Wilkins Elementary School",
 
-	"budget":  320.00
+			"budget":  320.00
 
-	}
+		}
 
 	]
 
