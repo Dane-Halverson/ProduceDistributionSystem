@@ -13,8 +13,7 @@ Distributor::Distributor(std::string producefile, std::string schoolfile)
 }
 
 Distributor::~Distributor() {
-    JSONOut ProduceOut;
-    
+    JSONOut ProduceOut(curdate.getString());
     //setting current date
     if (next != nullptr) {
         produceHeap->insert(next);
