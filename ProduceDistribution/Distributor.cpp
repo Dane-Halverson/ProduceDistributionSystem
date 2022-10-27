@@ -37,7 +37,7 @@ Distributor::~Distributor() {
 
     for (int i = 0; i < schools.size(); i++)
     {
-        ProduceOut.setSchool(schools[i]->getType(), schools[i]->getName(), schools[i]->getBudget());
+        ProduceOut.setSchool(schools[i]->getType(), schools[i]->getName(), schools[i]->getBudget(), i);
     }
     
 

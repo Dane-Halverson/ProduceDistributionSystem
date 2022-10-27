@@ -2,12 +2,14 @@
 #include <iostream>
 
 JSONOut::JSONOut(std::string date) {
-    madefile.open("ProduceOutput" + date + ".json", std::ofstream::out);
+    madefileProd.open("ProduceOutput" + date + ".json", std::ofstream::out);
         std::cout << "fileopen\n";
+    madefileSch.open("SchoolsOut" + date + ".json", std::ofstream::out);
 }
 
 JSONOut::~JSONOut() {
-    madefile.close();
+    madefileProd.close();
+    madefileSch.close();
 }
 
 void JSONOut::OUT() {
@@ -44,10 +46,10 @@ void JSONOut::setDoP(std::string s) {
     ProduceJ["dateOfPick"] = s;
 }
 
-void JSONOut::setSchool(std::string type, std::string name, float budget) {
-    schoolsJSON["type"] = type;
-    schoolsJSON["name"] = name;
-    schoolsJSON["budget"] = budget;
+void JSONOut::setSchool(std::string type, std::string name, float budget, int i) {
+    schoolsJSON[i]["type"] = type;
+    schoolsJSON[i]["name"] = name;
+    schoolsJSON[i]["budget"] = budget;
 }
 
 

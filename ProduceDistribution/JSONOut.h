@@ -38,5 +38,5 @@ public:
     void setDoP(std::string s);
     void vecPush();
     void OUT();
-    void setSchool(std::string type, std::string name, float budget);
+    void setSchool(std::string type, std::string name, float budget, int i);
 };
