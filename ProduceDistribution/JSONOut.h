@@ -16,8 +16,8 @@ class JSONOut
 {
 private:
     //make fstream object
-    std::ofstream madefileProd ("../schoolUpdate.json", std::ofstream::out);
-    std::ofstream madefileSch ("../schoolUpdate.json", std::ofstream::out);
+    std::ofstream madefileProd;
+    std::ofstream madefileSch;
     //make json object
     json ProdJSON;
     json schoolsJSON;
