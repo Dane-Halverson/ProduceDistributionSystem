@@ -14,6 +14,7 @@ Distributor::Distributor(std::string producefile, std::string schoolfile)
 
 Distributor::~Distributor() {
     JSONOut ProduceOut;
+    
     //setting current date
     if (next != nullptr) {
         produceHeap->insert(next);
@@ -34,6 +35,12 @@ Distributor::~Distributor() {
     produceHeap->remove();
 
     }
+
+    for (int i = 0; i < schools.size(); i++)
+    {
+        ProduceOut.setSchool(schools[i]->getType(), schools[i]->getName(), schools[i]->getBudget());
+    }
+    
 
     ProduceOut.OUT();
 }

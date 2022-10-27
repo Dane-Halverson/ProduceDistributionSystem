@@ -16,9 +16,11 @@ class JSONOut
 {
 private:
     //make fstream object
-    std::ofstream madefile;
+    std::ofstream madefileProd ("../schoolUpdate.json", std::ofstream::out);
+    std::ofstream madefileSch ("../schoolUpdate.json", std::ofstream::out);
     //make json object
     json ProdJSON;
+    json schoolsJSON;
     //for holding produce
     json ProduceJ;
     //create a vector for produce 
@@ -36,4 +38,5 @@ public:
     void setDoP(std::string s);
     void vecPush();
     void OUT();
+    void setSchool(std::string type, std::string name, float budget);
 };

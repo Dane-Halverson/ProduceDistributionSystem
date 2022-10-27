@@ -6,7 +6,8 @@ JSONOut::JSONOut() {
 
 void JSONOut::OUT() {
     ProdJSON ["produce"] = prodVec;
-    madefile << ProdJSON.dump(4);
+    madefileProd << ProdJSON.dump(4);
+    madefileSch << schoolsJSON.dump(4);
 }
 
 void JSONOut::vecPush() {
@@ -36,4 +37,11 @@ void JSONOut::setFarm(std::string s) {
 void JSONOut::setDoP(std::string s) {
     ProduceJ["dateOfPick"] = s;
 }
+
+void JSONOut::setSchool(std::string type, std::string name, float budget) {
+    schoolsJSON["type"] = type;
+    schoolsJSON["name"] = name;
+    schoolsJSON["budget"] = budget;
+}
+
 
