@@ -24,8 +24,8 @@ private:
     //create a vector for produce 
     std::vector<json> prodVec;
 public:
-    JSONOut();
-    ~JSONOut() = default;
+    JSONOut(std::string date);
+    ~JSONOut();
 
     void setDate(std::string s);
     // no set days since picked BECAUSE it matters for each individual produce

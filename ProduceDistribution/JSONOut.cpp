@@ -1,7 +1,13 @@
 #include "JSONOut.h"
+#include <iostream>
 
-JSONOut::JSONOut() {
+JSONOut::JSONOut(std::string date) {
+    madefile.open("ProduceOutput" + date + ".json", std::ofstream::out);
+        std::cout << "fileopen\n";
+}
 
+JSONOut::~JSONOut() {
+    madefile.close();
 }
 
 void JSONOut::OUT() {
