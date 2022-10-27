@@ -4,8 +4,9 @@
 
 
 TEST_CASE("Distributor Basic Operations") {
-    Distributor d("../testJSONP.json", "../testJSONS.json");
+    Distributor d("produce.json", "schools.json");
     d.stageNext();
+    std::cout << d.getNextEperation();
     //REQUIRE(d.getNextType() == "tomatoes");
     
 }

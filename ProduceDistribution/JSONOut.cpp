@@ -3,7 +3,6 @@
 
 JSONOut::JSONOut(std::string date) {
     madefileProd.open("ProduceOutput" + date + ".json", std::ofstream::out);
-        std::cout << "fileopen\n";
     madefileSch.open("SchoolsOut" + date + ".json", std::ofstream::out);
 }
 

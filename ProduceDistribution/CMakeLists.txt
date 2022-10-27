@@ -99,6 +99,7 @@ if (MAKE_CATCH2_TESTS)
     UnitTests/testDist.cpp 
     JSONP.h JSONP.cpp 
     JSONPS.h JSONPS.cpp
+    JSONOut.h JSONOut.cpp
     Distributor.h Distributor.cpp 
     School.h School.cpp
   )

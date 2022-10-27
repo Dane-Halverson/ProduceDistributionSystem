@@ -135,6 +135,6 @@ struct CompareProduce
 {
     bool operator()(const ProPtr &lhs, const ProPtr &rhs) const
     {
-        return (lhs->getExperInt() < rhs->getExperInt());
+        return (lhs->getExperInt() > rhs->getExperInt());
     }
 };
